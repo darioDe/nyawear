@@ -7,40 +7,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- link de bt -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- link de css -->
+    <link rel="stylesheet" href="css/main.css">
     <title> NYA - HOME </title>
 </head>
 
-<body>
-    <header id="toHeader" class="headerIndex">
-        <!-- imagen de logo y menu con enlaces -->
-        <div class="menuHeader">
-            <nav>   
-                <input type="checkbox" name="checkmenu" id="checkmenu">
-                <label for="checkmenu"><img class="menuIcon" src="img/menuicon.png" alt="Menú"></label>
-                <ul>
-                    <li><a href="pages/calzas.html"> CALZAS </a></li>
-                    <li><a href="pages/tops.html"> TOPS </a></li>
-                    <li><a href="pages/remeras.html"> REMERAS </a></li>
-                    <li><a href="pages/abrigos.html"> ABRIGOS </a></li>
-                    <li><a href="pages/contacto.html"> CONTACTO </a></li>
-                    <li><a href="pages/newin.html"> NEW IN </a></li>
-                </ul>
-            </nav>
+<body class="bodyIndex">
+    
+    <header class="headerIndex" id="toheader">
+        <!-- header con menú y logo -->
 
-        </div>
-
-        <div class="logoHeader">
+        <nav class="navbar navbar-dark navbar-expand-lg bg-black">
+            <div class="container-fluid">
             
-            <a href="#toheader">
-                <img src="img/logo.png" alt="Imagen de logo">
-            </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                        <li class="nav-item">
+                    
+                            <a class="nav-link active" aria-current="page" href="pages/calzas.html">
+                                CALZAS
+                            </a>
+                        </li>
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/tops.html">
+                                TOPS
+                            </a>
+                        </li> 
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/remeras.html">REMERAS</a>
+                        </li> 
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/abrigos.html">
+                                ABRIGOS
+                            </a>
+                        </li> 
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/contacto.html">
+                                CONTACTO
+                            </a>
+                        </li> 
+                
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="pages/newin.html">
+                                NEW IN
+                            </a>
+                        </li> 
+                    </ul>
+                
+                </div>
+            
+                <a class="navbar-brand" href="#toheader">
+                    <img src="img/logo.png" alt="Logo de NYA">
+                </a>
+            
+            </div>
         
-        </div>
-
+        </nav>
+    
     </header>
 
-    <main>
+    <main class="mainIndex">
         <!-- titulo, imagenes, texto descriptivo e input -->
         <div class="titleMain-index">
 
@@ -48,33 +87,39 @@
         
         </div>
 
-            <div class="dataDestacados-index">
+            <div class="containerDestacados">
 
                 <div class="boxDestacados">
                     <img src="img/ropa1.jpg" alt="Imagen de top">
-                    <p> Top deportivo celeste </p>
-                    <p><span> $1.500,00 </span></p>
-                    <form action="">
-                        <input type="submit" value="Agregar al carrito">
-                    </form>
+                    <div class="textDestacados">
+                        <p class="titleBox"> Top deportivo celeste </p>
+                        <p><span> $1.500,00 </span></p>
+                        <form action="">
+                            <input type="submit" value="Agregar al carrito">
+                        </form>
+                    </div>
                 </div>
 
                 <div class="boxDestacados">
                     <img src="img/ropa2.jpg" alt="Imagen de calza">
-                    <p> Calza de running negra </p>
-                    <p><span> $2.500,00 </span></p>
-                    <form action="">
-                        <input type="submit" value="Agregar al carrito">
-                    </form>
+                    <div class="textDestacados">
+                        <p class="titleBox"> Calza de running negra </p>
+                        <p><span> $2.500,00 </span></p>
+                        <form action="">
+                            <input type="submit" value="Agregar al carrito">
+                        </form>
+                    </div>
                 </div>
 
                 <div class="boxDestacados">
                     <img src="img/ropa3.jpg" alt="Imagen de remera">
-                    <p> Remera lycra blanca </p>
-                    <p><span> $2.100,00 </span></p>
-                    <form action="">
-                        <input type="submit" value="Agregar al carrito">
-                    </form>
+                    <div class="textDestacados">
+                        <p class="titleBox"> Remera lycra blanca </p>
+                        <p><span> $2.100,00 </span></p>
+                        <form action="">
+                            <input type="submit" value="Agregar al carrito">
+                        </form>
+                    </div>
                 </div>
                 
             </div>
@@ -85,7 +130,7 @@
 
         <section>
 
-            <div class="anchor-index-top">
+            <div class="anchorIndex-top">
 
                 <div class="anchor-index">
                     <a href="pages/tops.html">
@@ -103,7 +148,7 @@
             
             </div>
 
-            <div class="anchor-index-bottom">
+            <div class="anchorIndex-bottom">
 
                 <div class="anchor-index">
                     <a href="pages/calzas.html">
@@ -125,7 +170,7 @@
 
     </main>
 
-    <footer>
+    <footer class="footerIndex">
         <!-- footer con inputs, texto e imagenes con enlaces -->
             
         <div class="footerTop-index">
@@ -151,7 +196,7 @@
                 NYA es indumentaria de entrenamiento que provee calce anatómico, extraordinarios diseños, y propiedades técnicas que incluyen termorregulación, tejidos absorbentes e incremento de oxigenación en los músculos.
             </p>
 
-            <div class="img-footer-index">
+            <div class="footerImg">
                 <a href="https://www.facebook.com">
                     <img class="imgFb" src="img/fblogo.png" alt="facebook">
                 </a>
@@ -163,7 +208,11 @@
                 </a>
             </div>
         </div>    
-    </footer>   
+    </footer>
+    
+    <!-- link de js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
 
