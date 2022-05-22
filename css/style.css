@@ -11,7 +11,7 @@
 
 /* estilos de body de index */
 
-body {
+/* body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.2fr 2.2fr 1fr;
@@ -21,11 +21,15 @@ body {
     background-image: url(../img/fondo2.jpg);
     background-attachment: fixed;
     background-size: cover;
-}
+} */
 
 /*  estilos de header general */
 
-header {
+.navbar-toggler-icon {
+    color: aqua;
+}
+
+/* header {
     width: 100%;
     grid-area: header;
     display: flex;
@@ -36,7 +40,7 @@ header {
     z-index: 1;
     border-bottom: 1px solid #8dc7e9;
     background-image: linear-gradient(to left, black, rgb(34, 34, 37));
-}
+} */
 
 .menuIcon {
     height: 2rem;
@@ -284,7 +288,7 @@ footer img {
 
 /* estilos de remeras */
 
-.bodyRemeras {
+/* .bodyRemeras {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.39fr auto 1fr;
@@ -301,8 +305,8 @@ footer img {
 }
 
 .footerRemeras {
-    grid-area: footer;
-}
+    grid-area: footer; 
+}*/
 
 /* estilos de abrigos */
 

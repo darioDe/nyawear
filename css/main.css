@@ -1,0 +1,57 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodyRemera {
+    background-image: url(../img/fondo2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    width: 100vw;
+    position: fixed; 
+    z-index: 1;  
+}
+
+.titleRemeras {
+    margin: 8rem auto 4rem auto;
+    color: #8dc7e9;
+}
+
+.card {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+span {
+    color: #8dc7e9;
+    font-weight: bold;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    margin: 5% auto 5% auto;
+}
+
+.footerRemeras {
+    background-color: black;
+    color: white;
+    padding: 5%;
+}
+
+
+.subFooter-remeras {
+    color: #8dc7e9;
+}
+
+.footerImg img {
+    width: 50px;
+    height: 50px;
+}

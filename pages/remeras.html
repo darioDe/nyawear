@@ -7,265 +7,280 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- link de bt -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- link a csss -->
+    <link rel="stylesheet" href="../css/main.css">
     <title> NYA - REMERAS </title>
 </head>
 
-<body class="bodyRemeras">
+<body class="bodyRemera container-fluid">
+        
+        <header class="row">
 
-    <header id="toHeader" class="headerIndex">
-        <!-- imagen de logo y menu con enlaces -->
-        <div class="menuHeader">
-            <nav>   
-                <input type="checkbox" name="checkmenu" id="checkmenu">
-                <label for="checkmenu"><img class="menuIcon" src="../img/menuicon.png" alt="Menú"></label>
-                <ul>
-                    <li><a href="../pages/calzas.html"> CALZAS </a></li>
-                    <li><a href="../pages/tops.html"> TOPS </a></li>
-                    <li><a href="../pages/remeras.html"> REMERAS </a></li>
-                    <li><a href="../pages/abrigos.html"> ABRIGOS </a></li>
-                    <li><a href="../pages/contacto.html"> CONTACTO </a></li>
-                    <li><a href="../pages/newin.html"> NEW IN </a></li>
-                </ul>
-            </nav>
-
-        </div>
-
-        <div class="logoHeader">
+            <nav class="navbar navbar-dark navbar-expand-lg bg-black">
+                <div class="container-fluid">
+                
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                            <li class="nav-item">
+                        
+                                <a class="nav-link active" aria-current="page" href="calzas.html">
+                                    CALZAS
+                                </a>
+                            </li>
+                    
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="tops.html">
+                                    TOPS
+                                </a>
+                            </li> 
+                    
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="remeras.html">REMERAS</a>
+                            </li> 
+                    
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="abrigos.html">
+                                    ABRIGOS
+                                </a>
+                            </li> 
+                    
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contacto.html">
+                                    CONTACTO
+                                </a>
+                            </li> 
+                    
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="newin.html">
+                                    NEW IN
+                                </a>
+                            </li> 
+                        </ul>
+                    
+                    </div>
+                
+                    <a class="navbar-brand" href="#">
+                        <img src="../img/logo.png" alt="Logo de NYA">
+                    </a>
+                
+                </div>
             
-            <a href="../index.html">
-                <img src="../img/logo.png" alt="Imagen de logo">
-            </a>
+            </nav>
         
-        </div>
+        </header>
 
-    </header>
+        <main class="container-fluid">
 
-    <main class="mainRemeras">
-        <!-- main con titulo, imagenes, texto e inputs -->
-        <div class="titleMain-data">
-
-            <h1> REMERAS </h1>
-        
-        </div>    
-
-        <div class="data">
-
-            <div class="box">
-                <img src="../img/remera7.jpg" alt="Imagen de remera">
-                <p> Musculosa Larga Rosa </p>
-                <p><span> $3.500,00 </span></p>
-                <form action="">
-                    <label for="talle">
-                        Talle 
-                    </label>
-                    <select name="talle">
-                        <option valeu="S" name="talle">S </option>
-                        <option valeu="M" name="Talle">M </option>
-                        <option valeu="L" name="talle">L </option>
-                        <option valeu="XL"name="talle"> XL </option>        
-                    </select>
-                </form>
-                <form action="">
-                    <input type="submit" value="Agregar al carrito">
-                </form>
+            <div class="row">
+                <h1 class="col-12 text-center titleRemeras"> REMERAS </h1>
             </div>
 
-            <div class="box">
-                <img src="../img/remera1.jpg" alt="Imagen de remera">
-                <p> Musculosa Pupera Azul </p>
-                <p><span> $3.150,00 </span></p>
-                <form action="">
-                    <label for="talle">
-                        Talle 
-                    </label>
-                    <select name="talle">
-                        <option valeu="S" name="talle">S </option>
-                        <option valeu="M" name="Talle">M </option>
-                        <option valeu="L" name="talle">L </option>
-                        <option valeu="XL"name="talle"> XL </option>        
-                    </select>
-                </form>
-                <form action="">
-                    <input type="submit" value="Agregar al carrito">
-                </form>
+            <div class="row">
+                <div class="product col-xs-6 col-sm-6 col-md-4 col-xl-4">
+                    <div class="card" style="width: 14rem;">
+                        <img src="../img/remera1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Musculosa Pupera Azul</h5>
+                          <p class="card-text"><span> $3.150,00 </span></p>
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Talle</option>
+                            <option value="1"> S </option>
+                            <option value="2"> M </option>
+                            <option value="3"> L </option>
+                            <option value="4"> XL </option>
+                          </select>
+                          <a href="#" class="btn btn-primary"> Agregar al carrito </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div class="product col-xs-6 col-sm-6 col-md-4 col-xl-4">
+                      <div class="card" style="width: 14rem;">
+                        <img src="../img/remera2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"> Remera Rayas </h5>
+                          <p class="card-text"><span> $3.500 </span> </p>
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Talle</option>
+                            <option value="1"> S </option>
+                            <option value="2"> M </option>
+                            <option value="3"> L </option>
+                            <option value="4"> XL </option>
+                          </select>
+                          <a href="#" class="btn btn-primary"> Agregar al carrito </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div class="product col-xs-6 col-sm-6 col-md-4 col-xl-4">
+                      <div class="card" style="width: 14rem;">
+                        <img src="../img/remera3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"> Musculosa Volados Celest </h5>
+                          <p class="card-text"><span> $3.500,00 </span></p>
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Talle</option>
+                            <option value="1"> S </option>
+                            <option value="2"> M </option>
+                            <option value="3"> L </option>
+                            <option value="4"> XL </option>
+                          </select>
+                          <a href="#" class="btn btn-primary"> Agregar al carrito </a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="product col-xs-6 col-sm-6 col-md-4 col-xl-4">
+                      <div class="card" style="width: 14rem;">
+                        <img src="../img/remera4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"> Manga Larga Verde </h5>
+                          <p class="card-text"><span> $4.500,00 </span></p>
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Talle</option>
+                            <option value="1"> S </option>
+                            <option value="2"> M </option>
+                            <option value="3"> L </option>
+                            <option value="4"> XL </option>
+                          </select>
+                          <a href="#" class="btn btn-primary"> Agregar al carrito </a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="product col-xs-6 col-sm-6 col-md-4 col-xl-4">
+                      <div class="card" style="width: 14rem;">
+                        <img src="../img/remera5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"> Manga Larga Marron </h5>
+                          <p class="card-text"><span> $4.500,00 </span></p>
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Talle</option>
+                            <option value="1"> S </option>
+                            <option value="2"> M </option>
+                            <option value="3"> L </option>
+                            <option value="4"> XL </option>
+                          </select>
+                          <a href="#" class="btn btn-primary"> Agregar al carrito </a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="product col-xs-6 col-sm-6 col-md-4 col-xl-4">
+                      <div class="card" style="width: 14rem;">
+                        <img src="../img/remera6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"> Manga Larga  Salmón </h5>
+                          <p class="card-text"><span> $4.150,00 </span></p>
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Talle</option>
+                            <option value="1"> S </option>
+                            <option value="2"> M </option>
+                            <option value="3"> L </option>
+                            <option value="4"> XL </option>
+                          </select>
+                          <a href="#" class="btn btn-primary"> Agregar al carrito </a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="product col-xs-6 col-sm-6 col-md-4 col-xl-4">
+                      <div class="card" style="width: 14rem;">
+                        <img src="../img/remera7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"> Musculosa Larga Rosa </h5>
+                          <p class="card-text"><span> $3.500,00 </span></p>
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Talle</option>
+                            <option value="1"> S </option>
+                            <option value="2"> M </option>
+                            <option value="3"> L </option>
+                            <option value="4"> XL </option>
+                          </select>
+                          <a href="#" class="btn btn-primary"> Agregar al carrito </a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="product col-xs-6 col-sm-6 col-md-4 col-xl-4">
+                      <div class="card" style="width: 14rem;">
+                        <img src="../img/remera8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"> Musculosa Volados Lila </h5>
+                          <p class="card-text"><span> $4.100,00 </span></p>
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Talle</option>
+                            <option value="1"> S </option>
+                            <option value="2"> M </option>
+                            <option value="3"> L </option>
+                            <option value="4"> XL </option>
+                          </select>
+                          <a href="#" class="btn btn-primary"> Agregar al carrito </a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="product col-xs-6 col-sm-6 col-md-4 col-xl-4">
+                      <div class="card" style="width: 14rem;">
+                        <img src="../img/remera9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title"> Musculosa Pupera Verde </h5>
+                          <p class="card-text"><span> $3.300,00 </span></p>
+                          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Talle</option>
+                            <option value="1"> S </option>
+                            <option value="2"> M </option>
+                            <option value="3"> L </option>
+                            <option value="4"> XL </option>
+                          </select>
+                          <a href="#" class="btn btn-primary"> Agregar al carrito </a>
+                        </div>
+                      </div>
+                  </div>
             </div>
 
-            <div class="box">
-                <img src="../img/remera2.jpg" alt="Imagen de remera">
-                <p> Remera Rayas </p>
-                <p><span> $3.500,00 </span></p>
-                <form action="">
-                    <label for="talle">
-                        Talle 
-                    </label>
-                    <select name="talle">
-                        <option valeu="S" name="talle">S </option>
-                        <option valeu="M" name="Talle">M </option>
-                        <option valeu="L" name="talle">L </option>
-                        <option valeu="XL"name="talle"> XL </option>        
-                    </select>
-                </form>
-                <form action="">
-                    <input type="submit" value="Agregar al carrito">
-                </form>
-            </div>    
+        </main>
 
-            <div class="box">
-                <img src="../img/remera8.jpg" alt="Imagen de remera">
-                <p> Musculosa Volados Lila </p>
-                <p><span> $4.100,00 </span></p>
-                <form action="">
-                    <label for="talle">
-                        Talle 
-                    </label>
-                    <select name="talle">
-                        <option valeu="S" name="talle">S </option>
-                        <option valeu="M" name="Talle">M </option>
-                        <option valeu="L" name="talle">L </option>
-                        <option valeu="XL"name="talle"> XL </option>        
-                    </select>
-                </form>
-                <form action="">
-                    <input type="submit" value="Agregar al carrito">
-                </form>
+        <footer class="footerRemeras container-fluid">
+            <div class="newsFooter">
+                <h2 class="subFooter-remeras text-center"> NEWSLETTER </h2>
+                <p class="text-center"> Suscribete para recibir nuestras novedades </p>
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"> Ingresa tu Email </label>
+                      <input type="email" class="form-control" id="exampleInputEmail1">
+                    <button type="submit" class="btn btn-primary"> Suscribirse </button>
+                  </form>
             </div>
 
-            <div class="box">
-                <img src="../img/remera3.jpg" alt="Imagen de remera">
-                <p> Musculosa Volados Celeste </p>
-                <p><span> $3.500,00 </span></p>
-                <form action="">
-                    <label for="talle">
-                        Talle 
-                    </label>
-                    <select name="talle">
-                        <option valeu="S" name="talle">S </option>
-                        <option valeu="M" name="Talle">M </option>
-                        <option valeu="L" name="talle">L </option>
-                        <option valeu="XL"name="talle"> XL </option>        
-                    </select>
-                </form>
-                <form action="">
-                    <input type="submit" value="Agregar al carrito">
-                </form>
+            
+
+            <div class="row">
+                <p class="text-end col-xs-12 col-sm-12 col-md-8 col-lg-9"> NYA es indumentaria de entrenamiento que provee calce anatómico, extraordinarios diseños, y propiedades técnicas que incluyen termorregulación, tejidos absorbentes e incremento de oxigenación en los músculos. </p>
+                
+                <div class="footerImg col-xs-12 col-sm-12 col-md-4 col-lg-3">
+                    <a href="https://www.facebook.com"><img class="imgFb" src="../img/fblogo.png" alt="facebook"></a>
+                    <a href="http://www.instagram.com"><img class="imgInst" src="../img/instagramlogo.png" alt="instagram"></a>
+                    <a href="http://www.whatsapp.com"><img class="imgWtsp"src="../img/wtplogo.png" alt="whatsapp" ></a>
+                </div>
             </div>
 
-            <div class="box">
-                <img src="../img/remera4.jpg" alt="Imagen de remera">
-                <p> Manga Larga Verde </p>
-                <p><span> $4.500,00 </span></p>
-                <form action="">
-                    <label for="talle">
-                        Talle 
-                    </label>
-                    <select name="talle">
-                        <option valeu="S" name="talle">S </option>
-                        <option valeu="M" name="Talle">M </option>
-                        <option valeu="L" name="talle">L </option>
-                        <option valeu="XL"name="talle"> XL </option>        
-                    </select>
-                </form>
-                <form action="">
-                    <input type="submit" value="Agregar al carrito">
-                </form>
-            </div>
+            
+        </footer>
+    </div>
 
-            <div class="box">
-                <img src="../img/remera9.jpg" alt="Imagen de remera">
-                <p> Musculosa Pupera Verde </p>
-                <p><span> $3.300,00 </span></p>
-                <form action="">
-                    <label for="talle">
-                        Talle 
-                    </label>
-                    <select name="talle">
-                        <option valeu="S" name="talle">S </option>
-                        <option valeu="M" name="Talle">M </option>
-                        <option valeu="L" name="talle">L </option>
-                        <option valeu="XL"name="talle"> XL </option>        
-                    </select>
-                </form>
-                <form action="">
-                    <input type="submit" value="Agregar al carrito">
-                </form>
-            </div>
 
-            <div class="box">
-                <img src="../img/remera5.jpg" alt="Imagen de remera">
-                <p> Manga Larga Marron </p>
-                <p><span> $4.500,00 </span></p>
-                <form action="">
-                    <label for="talle">
-                        Talle 
-                    </label>
-                    <select name="talle">
-                        <option valeu="S" name="talle">S </option>
-                        <option valeu="M" name="Talle">M </option>
-                        <option valeu="L" name="talle">L </option>
-                        <option valeu="XL"name="talle"> XL </option>        
-                    </select>
-                </form>
-                <form action="">
-                    <input type="submit" value="Agregar al carrito">
-                </form>
-            </div>
-
-            <div class="box">
-                <img src="../img/remera6.jpg" alt="Imagen de remera">
-                <p> Manga Larga  Salmón </p>
-                <p><span> $4.150,00 </span></p>
-                <form action="">
-                    <label for="talle">
-                        Talle 
-                    </label>
-                    <select name="talle">
-                        <option valeu="S" name="talle">S </option>
-                        <option valeu="M" name="Talle">M </option>
-                        <option valeu="L" name="talle">L </option>
-                        <option valeu="XL"name="talle"> XL </option>        
-                    </select>
-                </form>
-                <form action="">
-                    <input type="submit" value="Agregar al carrito">
-                </form>
-            </div>   
-
-        </div>
-    </main>
-
-    <footer class="footerRemeras">
-        <!-- footer con formulario, párrafo e imagenes con enlaces -->
-        <div class="footerTop-index">
-            <h3 class="h3-news"> NEWSLETTER </h3>
     
-            <p> Se el primero en saber sobre nuestras novedades! </p>
-    
-            <form action="" method="get">
-
-                <label for="mail">
-                    <input class="input-mail" type="email" name="mail" placeholder="Ingresá tu correo">
-                </label>
-
-                <label for="suscribirse">
-                    <input class="input-sus" type="submit" name="suscribirse" value="SUSCRIBIRSE">
-                </label>
-
-            </form>
-        </div>
-
-        <div class="footerBottom-index">
-            <p>
-                NYA es indumentaria de entrenamiento que provee calce anatómico, extraordinarios diseños, y propiedades técnicas que incluyen termorregulación, tejidos absorbentes e incremento de oxigenación en los músculos.
-            </p>
-
-            <div class="img-footer-index">
-                <a href="https://www.facebook.com"><img class="imgFb" src="../img/fblogo.png" alt="facebook"></a>
-                <a href="http://www.instagram.com"><img class="imgInst" src="../img/instagramlogo.png" alt="instagram"></a>
-                <a href="http://www.whatsapp.com"><img class="imgWtsp"src="../img/wtplogo.png" alt="whatsapp" ></a>
-            </div>
-        </div>
-        
-    </footer>
+    <!-- link de js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
