@@ -232,8 +232,29 @@ h1 {
     border: 1px solid black;
 }
 
+/* estilos de calzas */
 
+.bodyCalzas {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";
+    grid-gap: 4rem;
+}
 
+.headerCalzas {
+    grid-area: header;
+}
+
+.mainCalzas {
+    grid-area: main;
+}
+
+.footerCalzas {
+    grid-area: footer;
+}
 
 
 .bodyData {
@@ -470,7 +491,7 @@ span {
 
     .textBox {
         width: 12rem;
-        height: 10rem;
+        height: 12rem;
         font-size: 1rem;
     }
 
