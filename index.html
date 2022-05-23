@@ -6,19 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <!-- link de bt -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- link de css -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
     <title> NYA - HOME </title>
 </head>
 
 <body class="bodyIndex">
-    
-    <header class="headerIndex" id="toheader">
-        <!-- header con menú y logo -->
-
+    <header id="toHeader" class="headerIndex">
+        <!-- imagen de logo y menu con enlaces -->
         <nav class="navbar navbar-dark navbar-expand-lg bg-black">
             <div class="container-fluid">
             
@@ -61,7 +58,7 @@
                         </li> 
                 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="pages/newin.html">
+                            <a class="nav-link active" aria-current="page" href="newin.html">
                                 NEW IN
                             </a>
                         </li> 
@@ -70,76 +67,76 @@
                 </div>
             
                 <a class="navbar-brand" href="#toheader">
-                    <img src="img/logo.png" alt="Logo de NYA">
+                    <img src="../img/logo.png" alt="Logo de NYA">
                 </a>
             
             </div>
         
         </nav>
-    
+
     </header>
 
     <main class="mainIndex">
         <!-- titulo, imagenes, texto descriptivo e input -->
-        <div class="titleMain-index">
+        <div class="titleMain">
 
             <h1> DESTACADOS</h1>
         
         </div>
 
-            <div class="containerDestacados">
+            <div class="containerBox">
 
                 <div class="boxDestacados">
                     <img src="img/ropa1.jpg" alt="Imagen de top">
-                    <div class="textDestacados">
-                        <p class="titleBox"> Top deportivo celeste </p>
+                    <div class="textBox">
+                        <p class="titleBox"> Top deportivo </p>
                         <p><span> $1.500,00 </span></p>
                         <form action="">
-                            <input type="submit" value="Agregar al carrito">
+                            <input type="submit" value="Comprar!">
                         </form>
                     </div>
                 </div>
 
                 <div class="boxDestacados">
                     <img src="img/ropa2.jpg" alt="Imagen de calza">
-                    <div class="textDestacados">
-                        <p class="titleBox"> Calza de running negra </p>
+                    <div class="textBox">
+                        <p class="titleBox"> Calza running negra </p>
                         <p><span> $2.500,00 </span></p>
                         <form action="">
-                            <input type="submit" value="Agregar al carrito">
+                            <input type="submit" value="Comprar!">
                         </form>
                     </div>
                 </div>
 
                 <div class="boxDestacados">
                     <img src="img/ropa3.jpg" alt="Imagen de remera">
-                    <div class="textDestacados">
+                    <div class="textBox">
                         <p class="titleBox"> Remera lycra blanca </p>
                         <p><span> $2.100,00 </span></p>
                         <form action="">
-                            <input type="submit" value="Agregar al carrito">
+                            <input type="submit" value="Comprar!">
                         </form>
                     </div>
                 </div>
                 
             </div>
 
-        <div class="newin-index">
+        <div class="newinh2">
             <h2><a href="pages/newin.html"> NEW IN </a></h2>
         </div>
 
         <section>
 
-            <div class="anchorIndex-top">
+            <div class="anchorTop">
 
-                <div class="anchor-index">
+                <div class="anchor">
                     <a href="pages/tops.html">
                         <p> TOPS </p>
                         <img src="img/ropa4.jpg" alt="Imagen de top">                            
                     </a>
                 </div>
 
-                <div class="anchor-index">
+                <div class="anchor">
                     <a href="pages/remeras.html">
                         <p> REMERAS </p>
                         <img src="img/ropa6.jpg" alt="Imagen de remera">
@@ -148,16 +145,16 @@
             
             </div>
 
-            <div class="anchorIndex-bottom">
+            <div class="anchorBottom">
 
-                <div class="anchor-index">
+                <div class="anchor">
                     <a href="pages/calzas.html">
                         <img src="img/ropa5.jpg" alt="Imagen de calza">
                         <p> CALZAS </p>
                     </a>
                 </div>
             
-                <div class="anchor-index">    
+                <div class="anchor">    
                     <a href="pages/abrigos.html">
                         <img src="img/ropa7.jpg" alt="Imagen de abrigo">
                         <p> ABRIGOS </p>
@@ -173,30 +170,30 @@
     <footer class="footerIndex">
         <!-- footer con inputs, texto e imagenes con enlaces -->
             
-        <div class="footerTop-index">
-            <h3 class="h3-news"> NEWSLETTER </h3>
+        <div class="footerTop">
+            <h2> NEWSLETTER </h2>
     
-            <p> Se el primero en saber sobre nuestras novedades! </p>
+            <p> Suscribete para recibir novedades! </p>
     
             <form action="" method="get">
 
                 <label for="mail">
-                    <input class="input-mail" type="email" name="mail" placeholder="Ingresá tu correo">
+                    <input class="mail" type="email" name="mail" placeholder="Ingresá tu correo">
                 </label>
 
                 <label for="suscribirse">
-                    <input class="input-sus" type="submit" name="suscribirse" value="SUSCRIBIRSE">
+                    <input class="botonSus" type="submit" name="suscribirse" value="SUSCRIBIRSE">
                 </label>
 
             </form>
         </div>
 
-        <div class="footerBottom-index">
+        <div class="footerBottom">
             <p>
                 NYA es indumentaria de entrenamiento que provee calce anatómico, extraordinarios diseños, y propiedades técnicas que incluyen termorregulación, tejidos absorbentes e incremento de oxigenación en los músculos.
             </p>
 
-            <div class="footerImg">
+            <div class="imgFooter">
                 <a href="https://www.facebook.com">
                     <img class="imgFb" src="img/fblogo.png" alt="facebook">
                 </a>
@@ -208,11 +205,10 @@
                 </a>
             </div>
         </div>    
-    </footer>
+    </footer> 
     
     <!-- link de js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
 </body>
 </html>
 

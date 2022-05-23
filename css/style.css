@@ -4,99 +4,130 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-    /*color: #2c81b2;*/
-    color: #8dc7e9;
+    /* color: #8dc7e9; */
 }
 
-/* estilos de body de index */
+/* estilos de body */
 
-/* body {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.2fr 2.2fr 1fr;
-    grid-template-areas: "header header header"
-                        "main main main"
-                        "footer footer footer";
+body {
     background-image: url(../img/fondo2.jpg);
     background-attachment: fixed;
     background-size: cover;
-} */
-
-/*  estilos de header general */
-
-.navbar-toggler-icon {
-    color: aqua;
-}
-
-/* header {
-    width: 100%;
-    grid-area: header;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* background-color: black; */
-    position: fixed;
-    z-index: 1;
-    border-bottom: 1px solid #8dc7e9;
-    background-image: linear-gradient(to left, black, rgb(34, 34, 37));
-} */
-
-.menuIcon {
-    height: 2rem;
-    width: 2rem;
-}
-
-header nav ul li a {
-    text-decoration: none;
     color: #8dc7e9;
 }
 
-header nav ul li {
-    list-style-type: none;
+/*  estilos de header*/
+
+header {
+    width: 100vw;
+    grid-area: header;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
 }
 
-.menuHeader ul {
-    display: none;
-}
+/* estilos de footer */
 
-.menuHeader input {
-    display: none;
-}
-
-.menuHeader input:checked ~ ul {
+footer {
+    margin-top: 20%;
+    grid-area: footer;
     display: flex;
     flex-direction: column;
-    position: absolute;
     background-color: black;
-    height: 50%;
-    width: 50%;
-    border-top: 1px solid #8dc7e9;
+    color: white;
+    justify-content: center;
 }
 
-.menuHeader input:checked ~ ul li {
-    border-bottom: 1px solid #8dc7e9;
-    background-color: black;
+footer img {
+    width: 50px;
+    height: 50px;    
 }
 
-.menuHeader input:checked ~ ul li:hover {
-    background-color: rgb(34, 34, 37);
+.footerTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 3% auto 15% auto;
+    justify-content: center;
 }
 
-/* estilos de main de index */
+.footerTop h2 {
+    color: #8dc7e9;
+}
 
-main {
+.footerTop form label {
+    display: flex;
+    justify-content: center;
+}
+
+.footerTop label {
+    display: flex;
+    width: 80vw;
+}
+
+.botonSus {
+    background-color: rgb(0, 132, 255);
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 5rem;
+    height: 2rem;
+    color: white;
+}
+
+.footerTop label input {
+    width: 20rem;
+}
+
+.footerBottom p {
+    margin-left: 1rem;
+    width: 80vw;
+}
+
+.imgFooter {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* estilos de Index */
+
+.bodyIndex {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";
+    grid-gap: 4rem;
+}
+
+.headerIndex {
+    grid-area: header;
+}
+
+.mainIndex {
     grid-area: main;
     display: flex;
     flex-direction: column;
 }
 
-.titleMain-index {
-    text-align: center;
-    margin-bottom: 2rem;
+.footerIndex {
+    grid-area: footer;
 }
 
-.dataDestacados-index {
+/* estilos de main - index */
+
+.titleMain {
+    text-align: center;
+    margin: 4rem auto 4rem auto;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.containerBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;    
@@ -105,8 +136,8 @@ main {
 .boxDestacados {
     text-align: center;
     /*padding: 10%;*/
-    width: 130px;
-    margin-bottom: 5%;
+    /* width: 130px; */
+    margin: auto 0.5rem 2rem 0.5rem;
 }
 
 .boxDestacados form input {
@@ -115,110 +146,93 @@ main {
 
 
 .boxDestacados img {
-    width: 120px;
-    height: 180px;
+    width: 9rem;
+    height: 12rem;
     border: 2px solid black;
 }
 
-.newin-index {
+.textBox {
+    border: 1px solid black;
+    width: 9rem;
+    height: 12rem;
+    /* padding: 0.1rem; */
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    margin: 10%;
+}
+
+.titleBox {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.textBox form input {
+    background-color: rgb(0, 132, 255);
+    border: 1px solid black;
+    border-radius: 10%;
+    width: 5rem;
+    height: 2rem;
+    color: white;
+}
+
+.newinh2 {
+    text-align: center;
+    margin: 6rem auto 2rem auto;
     font-weight: bold;
 }
 
-.newin-index a{
+.newinh2 a {
     text-decoration: none;
     border: 4px solid rgba(0, 0, 0, 0.966);
-    /*background-color: rgb(0, 0, 0);*/
+    background-color: rgb(0, 0, 0);
     box-shadow: 2px 2px 3px  rgb(14, 13, 13);
-    animation-name: blackBackground;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
+    color: #8dc7e9;
 }
 
-@keyframes blackBackground {
-    50% { background-image: linear-gradient(to left, black, rgb(34, 34, 37));}
-}
-
-.anchor-index-top {
+.anchorTop {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.anchor-index-bottom {
+.anchorBottom {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.anchor-index a {
+.anchor a {
     text-decoration: none;
     text-align: center;
     font-weight: bold;
     font-size: 1rem;
+    color: #8dc7e9;
 }
 
-.anchor-index a p {
-    /* background-color: black; */
-    border: 3px solid black ;
+.anchor a p {
+    border: 1px solid black ;
     box-shadow: 2px 2px 3px  rgb(14, 13, 13);
-    /*border-radius: 50%;*/
-    margin: 4%;
-    animation-name: blackBackground;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
+    text-align: center;
+    margin: auto 0.1rem auto 0.1rem;
+    background-color: black;
 }
 
-.anchor-index a img:hover {
+.anchor a img:hover {
     filter: brightness(50%);
 }
 
-.anchor-index a img{
-    width: 80px;
-    height: 80px;
-    border: 2px solid black;
-    border-radius: 50%;
+.anchor a img{
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid black;
 }
 
-/* estilos de footer general */
 
-footer {
-    margin-top: 20%;
-    grid-area: footer;
-    display: flex;
-    flex-direction: column;
-    /* background-color: black; */
-    border-top: 1px solid #8dc7e9;
-    background-image: linear-gradient(to left, black, rgb(34, 34, 37));
-}
-
-footer img {
-    width: 50px;
-    height: 50px;    
-}
-
-.footerTop-index {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 3% auto 15% auto;
-}
-
-.footerTop-index label {
-    display: flex;
-    width: 100%;
-}
-
-.footerTop-index label input {
-    width: 20rem;
-    color: black;
-}
-
-.img-footer-index {
-    margin-top: 5%;
-    display: flex;
-    justify-content: center;
-}
 
 
 
@@ -286,27 +300,54 @@ footer img {
     border: 2px solid black;
 }
 
-/* estilos de remeras */
+/* estilos de remeras*/
 
-/* .bodyRemeras {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.39fr auto 1fr;
-    grid-template-areas: "header header header"
-                        "main main main"
-                        "footer footer footer";
+.bodyRemera {
     background-image: url(../img/fondo2.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
 
-.mainRemeras {
-    grid-area: main;
+
+.titleRemeras {
+    margin: 8rem auto 4rem auto;
+    color: #8dc7e9;
+}
+
+.card {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+span {
+    color: #8dc7e9;
+    font-weight: bold;
+}
+
+.product {
+    display: flex;
+    justify-content: center;
+    margin: 5% auto 5% auto;
 }
 
 .footerRemeras {
-    grid-area: footer; 
-}*/
+    background-color: black;
+    color: white;
+    padding: 5%;
+}
+
+
+.subFooter-remeras {
+    color: #8dc7e9;
+}
+
+.footerImg img {
+    width: 50px;
+    height: 50px;
+}
+
+
 
 /* estilos de abrigos */
 
@@ -400,37 +441,51 @@ footer img {
     text-align: center;
 }
 
-/* estilos para tablet */
+/* media queries para tablet */
 
 @media screen and (min-width:600px) {
     
-    /* mq de index */
-    body {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 0.6fr auto 0.3fr;
-        grid-template-areas: "header header header"
-                            "main main main"
-                            "footer footer footer";
+    /* estilos de main */
+
+    h1 {
+        font-size: 2.5rem;
     }
 
-    .titleMain-index {
-        margin-bottom: 4rem;
+    h2 {
+        font-size: 2rem;
     }
+
+    /* mq footer */
+
+    .footerTop {
+        margin-bottom: 1.5rem;
+    }
+
+    /* mq de index */
 
     .boxDestacados img {
-        width: 150px;
-        height: 220px;
+        width: 12rem;
+        height: 16rem;
     }
 
-    .anchor-index a img{
-        width: 250px;
-        height: 250px;
-        border-radius: 0%;
+    .textBox {
+        width: 12rem;
+        height: 10rem;
+        font-size: 1rem;
     }
 
-    .footerTop-index {
-        
-        margin-bottom: 5%;
+    .titleBox {
+        font-size: 1.2rem;
+    }
+
+    .anchor a img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .textBox form input {
+        width: 8rem;
+        height: 3rem;
     }
 
     /* estilos de tags compartidos por calzas - remeras - tops - abrigos - newin */
@@ -445,25 +500,28 @@ footer img {
     }    
 }
 
-/* estilos para deskpot */
+/* media queries para deskpot */
 
 @media screen and (min-width:992px){
 
-    /* mq de body */
+    /* mq de index */
     
     .boxDestacados img {
-        width: 260px;
-        height: 320px;
+        width: 16rem;
+        height: 20rem;
     }
 
     .boxDestacados {
         width: auto;
     }
 
-    .anchor-index a img{
-        width: 400px;
-        height: 400px;
-        border-radius: 0%;
+    .textBox {
+        width: 16rem;
+    }
+
+    .anchor a img{
+        width: 20rem;
+        height: 20rem;
     }
 
     .anchor-index-top {
@@ -478,6 +536,8 @@ footer img {
         width: 80%;
         margin-left: 2%;
     }
+
+
 
     /* mq de tags compartidos por calzas - remeras - tops - abrigos - newin */
 
