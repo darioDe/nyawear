@@ -256,69 +256,90 @@ h1 {
     grid-area: footer;
 }
 
+/* estilos de tops */
 
-.bodyData {
+.bodyTops {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.2fr 3fr 0.9fr;
-    grid-template-areas: "header header header"
-                        "main main main"
-                        "footer footer footer";
-    background-image: url(../img/fondo2.jpg);
-    background-attachment: fixed;
-    background-size: cover;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";
+    grid-gap: 4rem;
 }
 
-/* estilos de calzas */
+.headerTops {
+    grid-area: header;
+}
 
-.mainData {
+.mainTops {
     grid-area: main;
 }
 
-.footerData {
+.footerTops {
     grid-area: footer;
 }
 
-.titleMain-data {
-    text-align: center;
-    margin-bottom: 10%;
+
+/* estilo de contacto */
+
+.bodyContacto {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    grid-gap: 4rem;
 }
 
-/* estilos de etiquetas compartidaas por calzas - abrigos - remeras - tops - newin */
+.headerContacto {
+    grid-area: header;
+}
 
-.data {
+.mainContacto {
+    grid-area: main;
+}
+
+.footerContacto {
+    grid-area: footer;
+}
+
+.textMain {
+    color: white;
+    text-align: center;
+    margin: auto 1rem 4rem 1rem;
+}
+
+.textBox-contacto {
+    border: 1px solid black;
+    width: 9rem;
+    height: 15rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-bottom: 5%;    
+    margin: 1rem auto 1rem auto;
+    box-shadow: 2px 2px 3px  rgb(14, 13, 13);
 }
 
-.box input {
-    /* background-color: black; */
-    background-image: linear-gradient(to left, black, rgb(34, 34, 37));
+.textBox-contacto img {
+    margin-top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 
-.box select {
-    /* background-color: black; */
-    background-image: linear-gradient(to left, black, rgb(34, 34, 37));
+.textBox-contacto p a {
+    text-decoration: none;
+    color: #8dc7e9;
 }
 
-.box p {
-    width: 120px;
-}
-
-.box p span {
-    font-weight: bold;
-}
-
-.box img {
-    width: 120px;
-    height: 180px;
-    border: 2px solid black;
+.block {
+    display: block;
 }
 
 /* estilos de remeras*/
@@ -372,95 +393,7 @@ span {
 
 /* estilos de abrigos */
 
-.bodyAbrigos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.35fr auto 1fr;
-    grid-template-areas: "header header header"
-                        "main main main"
-                        "footer footer footer";
-    background-image: url(../img/fondo2.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-.mainAbrigos {
-    grid-area: main;
-}
-
-.footerAbrigos {
-    grid-area: footer;
-}
-
-.h3 {
-    text-align: center;
-    margin: 8%;
-}
-
-.titleMain-abrigos {
-    text-align: center;
-    margin: 10%;
-}
-
-/* estilos de contacto */
-
-.bodyContacto {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.5fr auto 1.1fr;
-    grid-template-areas: "header header header"
-                        "main main main"
-                        "footer footer footer";
-}
-
-.titleMain-contacto {
-    text-align: center;
-}
-
-.p-contacto {
-    text-align: center;
-    margin: 10%;
-}
-
-.dataContacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 10%;
-    padding: 20%;
-    /* background-color: black; */
-    border: 2px solid #8dc7e9;
-    background-image: linear-gradient(to left, black, rgb(34, 34, 37));
-}
-
-.boxContacto {
-    width: 10rem;
-    margin-bottom: 4rem;
-}
-
-.boxContacto p span {
-    font-weight: bold;
-}
-
-.boxContacto p span a {
-    text-decoration: none;
-}
-
 /* estilos de newin */
-
-.bodyNewin {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.5fr auto 1.1fr;
-    grid-template-areas: "header header header"
-                        "main main main"
-                        "footer footer footer";
-}
-
-.titleMain-newin {
-    text-align: center;
-}
 
 /* media queries para tablet */
 
@@ -509,16 +442,7 @@ span {
         height: 3rem;
     }
 
-    /* estilos de tags compartidos por calzas - remeras - tops - abrigos - newin */
-
-    .box {
-        margin: 2%;
-    }
-
-    .box img {
-        width: 150px;
-        height: 220px;
-    }    
+   
 }
 
 /* media queries para deskpot */
@@ -545,42 +469,17 @@ span {
         height: 20rem;
     }
 
-    .anchor-index-top {
-        justify-content: center;
-    }
-
-    .anchor-index-bottom {
-        justify-content: center;
-    }
-
-    .footerBottom-index p {
-        width: 80%;
-        margin-left: 2%;
-    }
-
-
-
-    /* mq de tags compartidos por calzas - remeras - tops - abrigos - newin */
-
-    .box img {
-        width: 260px;
-        height: 320px;
-    }
-
-    .box p {
-        width: auto;
-    }
-
     /* mq de contacto */
 
-    .dataContacto {
-        flex-direction: row;
-        margin: 10%;
-        padding: 5rem;
+    .textBox-contacto {
+        height: 17rem;
+        width: 14rem;
     }
 
-    .boxContacto {
-        margin: 2rem;
-        width: auto;
+    .block {
+        display: inline;
     }
+
+
 }
+
