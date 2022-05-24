@@ -389,11 +389,61 @@ span {
     height: 50px;
 }
 
-
-
 /* estilos de abrigos */
 
+.bodyAbrigos {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    grid-gap: 4rem;
+}
+
+.headerAbrigos {
+    grid-area: header;
+}
+
+.mainAbrigos {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerAbrigos {
+    grid-area: footer;
+}
+
+h3 {
+    text-align: start;
+    color: white;
+    margin: 2rem auto 2rem 2rem;
+}
+
 /* estilos de newin */
+
+.bodyNewin {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    grid-gap: 4rem;
+}
+
+.headerNewin {
+    grid-area: header;
+}
+
+.mainNewin {
+    grid-area: main;
+}
+
+.footerNewin {
+    grid-area: footer;
+}
 
 /* media queries para tablet */
 
