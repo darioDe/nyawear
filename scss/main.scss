@@ -15,7 +15,7 @@ body {
     background-image: url(../img/fondo2.jpg);
     background-attachment: fixed;
     background-size: cover;
-    color: $c2;   
+    color: $c1;   
 }
 
 // estilos de header
@@ -122,7 +122,7 @@ h1 {
 
     img {
         @include sizes2;
-        border: 2px solid black;
+        border: 2px solid $c4;
     }
 
     form {
@@ -130,7 +130,343 @@ h1 {
             color: $c4;
         }
     }
-
-
 }
+
+.textBox {
+    @include flexCol;
+    @include sizes2;
+    border: 1px solid $c4;
+    background-color: $c4;
+    color: $c3;
+    text-align: center;
+
+    form {
+        input {
+            background-color: $c3;
+            @include borderButton;
+            @include sizes1 (5rem, 2rem);
+            color: $c2;
+        }
+    }
+}
+
+.titleBox {
+    font-size: 1.2rem;
+    font-weight: bold;
+    @include sizes2;
+    @include flexRow;
+    text-align: center;
+    color: $c3;
+}
+
+.newinh2 {
+    text-align: center;
+    margin: 6rem auto 2rem auto;
+    font-weight: bold;
+
+    a {
+        text-decoration: none;
+        border: 4px solid rgba(0, 0, 0, 0.966);
+        background-color: $c4;
+        box-shadow: $shadow;
+        color: $c1;
+    }
+}
+
+.anchor {
+    a{
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        color: $c1;
+
+        p {
+            border: $border1;
+            box-shadow: $shadow;
+            text-align: center;
+            margin: auto 0.1rem auto 0.1rem;
+            background-color: $c4;
+        }
+
+        img {
+            @include sizes1 (8rem, 8rem);
+            border: $border1;
+        }
+
+        img:hover {
+            filter: brightness(50%);
+        }
+    }
+
+    
+}
+
+.anchorTop {
+    @include flexRow;
+}
+
+.anchorBottom {
+    @include flexRow; 
+}
+
+// estilo de calzas
+.bodyCalzas {
+    @include grid1;
+}
+
+.headerCalzas {
+    grid-area: header;
+}
+
+.mainCalzas {
+    grid-area: main;
+}
+
+.footerCalzas {
+    grid-area: footer;
+}
+
+// estilos de tops
+.bodyTops {
+    @include grid1;
+}
+
+.headerTops {
+    grid-area: header;
+}
+
+.mainTops {
+    grid-area: main;
+}
+
+.footerTops {
+    grid-area: footer;
+}
+
+// estilo de contacto
+.bodyContacto {
+    @include grid1;
+}
+
+.headerContacto {
+    grid-area: header;
+}
+
+.mainContacto {
+    grid-area: main;
+}
+
+.footerContacto {
+    grid-area: footer;
+}
+
+.textMain {
+    color: $c1;
+    text-align: center;
+    margin: auto 1rem 4rem 1rem;
+}
+
+.textBox-contacto {
+    border: $border1;
+    @include sizes1 (9rem, 15rem);
+    padding: 1rem;
+    background-color: $c4;
+    color: $c2;
+    @include flexCol;
+    align-items: center;
+    text-align: center;
+    margin: 1rem auto 1rem auto;
+    box-shadow: $shadow;
+
+    img {
+        margin-top: 0.5rem;
+        @include sizes1 (2rem, 2rem)
+    }
+
+    p {
+        a {
+            text-decoration: none;
+            color: $c1;
+        }
+    }
+}
+
+.block {
+    display: block;
+}
+
+// estilos de remeras
+.bodyRemera {
+    background-image: url(../img/fondo2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.titleRemeras {
+    margin: 8rem auto 4rem auto;
+    color: $c1;
+}
+
+.card {
+    background-color: $c4;
+    color: $c2;
+    text-align: center;
+}
+
+span {
+    color: $c1;
+    font-weight: bold;
+}
+
+.product {
+    @include flexRow;
+    margin: 5% auto 5% auto;
+}
+
+.footerRemeras {
+    background-color: $c4;
+    color: $c2;
+    padding: 5%;
+}
+
+.subFooter-remeras {
+    color: $c1;
+}
+
+.footerImg {
+    img {
+        @include sizes1 (50px, 50px)
+    }
+}
+
+// estilos de abrigos
+.bodyAbrigos {
+    @include grid2;
+}
+
+.headerAbrigos {
+    grid-area: header;
+}
+
+.mainAbrigos {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerAbrigos {
+    grid-area: footer;
+}
+
+h3 {
+    text-align: start;
+    color: $c2;
+    margin: 2rem auto 2rem 2rem;
+}
+
+// estilos de newin
+.bodyNewin {
+    @include grid2;
+}
+
+.headerNewin {
+    grid-area: header;
+}
+
+.mainNewin {
+    grid-area: main;
+}
+
+.footerNewin {
+    grid-area: footer;
+}
+
+// media queries para tablet
+@media screen and (min-width:600px) {
+    
+    /* estilos de main */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* mq footer */
+    .footerTop {
+        margin-bottom: 1.5rem;
+    }
+
+    /* mq de index */
+    .boxDestacados {
+        img {
+            @include sizes1 (12rem, 16rem);
+        }
+    }
+
+    .textBox {
+        @include sizes1 (12rem,12rem);
+        font-size: 1rem;
+    }
+
+    .titleBox {
+        font-size: 1.2rem;
+    }
+
+    .anchor {
+        a {
+            img {
+                @include sizes1 (15rem, 15rem)
+            }
+        }
+    }
+
+    .textBox{
+        form {
+            input {
+                @include sizes1 (8rem, 3rem)
+            }
+        }
+
+   
+    }
+}
+
+// media queries para deskpot
+@media screen and (min-width:992px) {
+
+    // mq de index
+    .boxDestacados {
+        width: auto;
+
+        img {
+            @include sizes1 (16rem, 20rem)
+        }
+    }
+
+    .textBox {
+        width: 16rem;
+    }
+
+    .anchor {
+        a {
+            img {
+                @include sizes1 (20rem, 20rem)
+            }
+        }
+    }
+
+    // mq de contacto
+
+    .textBox-contacto {
+        @include  sizes1 (17rem, 14rem)
+    }
+
+    .block {
+        display: inline;
+    }
+}
+
 

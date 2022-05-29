@@ -11,6 +11,16 @@
     grid-gap: 4rem;
 }
 
+@mixin grid2 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    grid-gap: 4rem;
+}
+
 // flexs
 @mixin flexCol {
     display: flex;
