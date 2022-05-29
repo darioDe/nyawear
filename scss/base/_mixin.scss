@@ -1,0 +1,43 @@
+// mixins
+
+// grids
+@mixin grid1 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "header header"
+                         "main main"
+                         "footer footer";
+    grid-gap: 4rem;
+}
+
+// flexs
+@mixin flexCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flexRow {
+    display: flex;
+    justify-content: center;
+}
+
+// borders
+@mixin borderButton {
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+// measures & sizes
+
+@mixin sizes1 ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin sizes2 {
+    width: 9rem;
+    height: 12rem;
+}
+
