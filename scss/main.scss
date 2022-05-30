@@ -123,6 +123,8 @@ h1 {
     img {
         @include sizes2;
         border: 2px solid $c4;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
     }
 
     form {
@@ -135,9 +137,11 @@ h1 {
 .textBox {
     @include flexCol;
     @include sizes2;
-    border: 1px solid $c4;
+    border: $border1;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     background-color: $c4;
-    color: $c3;
+    color: $c2;
     text-align: center;
 
     form {
@@ -153,10 +157,9 @@ h1 {
 .titleBox {
     font-size: 1.2rem;
     font-weight: bold;
-    @include sizes2;
     @include flexRow;
     text-align: center;
-    color: $c3;
+    color: $c2;
 }
 
 .newinh2 {

@@ -99,7 +99,9 @@ h1 {
   .boxDestacados img {
     width: 9rem;
     height: 12rem;
-    border: 2px solid black; }
+    border: 2px solid black;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; }
   .boxDestacados form input {
     color: black; }
 
@@ -110,8 +112,10 @@ h1 {
   width: 9rem;
   height: 12rem;
   border: 1px solid black;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   background-color: black;
-  color: #0084ff;
+  color: white;
   text-align: center; }
   .textBox form input {
     background-color: #0084ff;
@@ -124,12 +128,10 @@ h1 {
 .titleBox {
   font-size: 1.2rem;
   font-weight: bold;
-  width: 9rem;
-  height: 12rem;
   display: flex;
   justify-content: center;
   text-align: center;
-  color: #0084ff; }
+  color: white; }
 
 .newinh2 {
   text-align: center;
