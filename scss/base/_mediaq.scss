@@ -1,0 +1,88 @@
+// media queries
+
+// media queries para tablet
+@media screen and (min-width:600px) {
+    
+    /* estilos de main */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* mq footer */
+    .footerTop {
+        margin-bottom: 1.5rem;
+    }
+
+    /* mq de index */
+    .boxDestacados {
+        img {
+            @include sizes1 (12rem, 16rem);
+        }
+    }
+
+    .textBox {
+        @include sizes1 (12rem,12rem);
+        font-size: 1rem;
+    }
+
+    .titleBox {
+        font-size: 1.2rem;
+    }
+
+    .anchor {
+        a {
+            img {
+                @include sizes1 (15rem, 15rem)
+            }
+        }
+    }
+
+    .textBox{
+        form {
+            input {
+                @include sizes1 (8rem, 3rem)
+            }
+        }
+
+   
+    }
+}
+
+// media queries para deskpot
+@media screen and (min-width:992px) {
+
+    // mq de index
+    .boxDestacados {
+        width: auto;
+
+        img {
+            @include sizes1 (16rem, 20rem)
+        }
+    }
+
+    .textBox {
+        width: 16rem;
+    }
+
+    .anchor {
+        a {
+            img {
+                @include sizes1 (20rem, 20rem)
+            }
+        }
+    }
+
+    // mq de contacto
+
+    .textBox-contacto {
+        @include  sizes1 (17rem, 14rem)
+    }
+
+    .block {
+        display: inline;
+    }
+}
