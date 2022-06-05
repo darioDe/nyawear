@@ -1,3 +1,34 @@
+.bodyIndex, .bodyCalzas, .bodyTops, .bodyContacto {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "header header" "main main" "footer footer";
+  grid-gap: 4rem; }
+
+.bodyAbrigos, .bodyNewin {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer";
+  grid-gap: 4rem; }
+
+footer, .footerTop, .textBox, .textBox-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.footerTop form label, .imgFooter, .titleBox, .anchorTop, .anchorBottom, .product {
+  display: flex;
+  justify-content: center; }
+
+.botonSus, .textBox form input {
+  border: 1px solid black;
+  border-radius: 10%; }
+
+.boxDestacados img, .textBox {
+  width: 9rem;
+  height: 12rem; }
+
 * {
   margin: 0;
   padding: 0;
@@ -18,9 +49,6 @@ header {
   background-color: black; }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin-top: 20%;
   grid-area: footer;
   background-color: black;
@@ -30,24 +58,16 @@ footer {
     height: 50px; }
 
 .footerTop {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   margin: 3% auto 15% auto; }
   .footerTop h2 {
     color: #8dc7e9; }
-  .footerTop form label {
-    display: flex;
-    justify-content: center; }
-    .footerTop form label input {
-      width: 20rem; }
+  .footerTop form label input {
+    width: 20rem; }
 
 .botonSus {
   background-color: #0084ff;
-  border: 1px solid black;
-  border-radius: 10%;
   width: 5rem;
   height: 2em;
   color: white; }
@@ -57,18 +77,9 @@ footer {
   width: 80vw; }
 
 .imgFooter {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center; }
+  margin-top: 2rem; }
 
 /* estilos de Index */
-.bodyIndex {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "header header" "main main" "footer footer";
-  grid-gap: 4rem; }
-
 .headerIndex {
   grid-area: header; }
 
@@ -97,8 +108,6 @@ h1 {
   text-align: center;
   margin: auto 0.5rem 2rem 0.5rem; }
   .boxDestacados img {
-    width: 9rem;
-    height: 12rem;
     border: 2px solid black;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem; }
@@ -106,11 +115,6 @@ h1 {
     color: black; }
 
 .textBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 9rem;
-  height: 12rem;
   border: 1px solid black;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -119,8 +123,6 @@ h1 {
   text-align: center; }
   .textBox form input {
     background-color: #0084ff;
-    border: 1px solid black;
-    border-radius: 10%;
     width: 5rem;
     height: 2rem;
     color: white; }
@@ -128,8 +130,6 @@ h1 {
 .titleBox {
   font-size: 1.2rem;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
   text-align: center;
   color: white; }
 
@@ -163,21 +163,6 @@ h1 {
   .anchor a img:hover {
     filter: brightness(50%); }
 
-.anchorTop {
-  display: flex;
-  justify-content: center; }
-
-.anchorBottom {
-  display: flex;
-  justify-content: center; }
-
-.bodyCalzas {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "header header" "main main" "footer footer";
-  grid-gap: 4rem; }
-
 .headerCalzas {
   grid-area: header; }
 
@@ -187,13 +172,6 @@ h1 {
 .footerCalzas {
   grid-area: footer; }
 
-.bodyTops {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "header header" "main main" "footer footer";
-  grid-gap: 4rem; }
-
 .headerTops {
   grid-area: header; }
 
@@ -202,13 +180,6 @@ h1 {
 
 .footerTops {
   grid-area: footer; }
-
-.bodyContacto {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "header header" "main main" "footer footer";
-  grid-gap: 4rem; }
 
 .headerContacto {
   grid-area: header; }
@@ -231,9 +202,6 @@ h1 {
   padding: 1rem;
   background-color: black;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   margin: 1rem auto 1rem auto;
@@ -268,8 +236,6 @@ span {
   font-weight: bold; }
 
 .product {
-  display: flex;
-  justify-content: center;
   margin: 5% auto 5% auto; }
 
 .footerRemeras {
@@ -283,13 +249,6 @@ span {
 .footerImg img {
   width: 50px;
   height: 50px; }
-
-.bodyAbrigos {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr;
-  grid-template-areas: "header" "main" "footer";
-  grid-gap: 4rem; }
 
 .headerAbrigos {
   grid-area: header; }
@@ -306,13 +265,6 @@ h3 {
   text-align: start;
   color: white;
   margin: 2rem auto 2rem 2rem; }
-
-.bodyNewin {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: 1fr;
-  grid-template-areas: "header" "main" "footer";
-  grid-gap: 4rem; }
 
 .headerNewin {
   grid-area: header; }

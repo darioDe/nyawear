@@ -1,0 +1,14 @@
+// mixins
+
+// measures & sizes
+
+@mixin sizes1 ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+// flexs
+@mixin flex ($dis, $dir) {
+    display: $dis;
+    flex-direction: $dir;
+}

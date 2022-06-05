@@ -1,5 +1,6 @@
 @import "base/vars";
-@import "base/mixin";
+@import "base/mixins";
+@import "base/extends";
 
 //  reset
 
@@ -29,7 +30,7 @@ header {
 
 // estilos de footer
 footer {
-    @include flexCol;
+    @extend %flexCol;
     margin-top: 20%;
     grid-area: footer;
     background-color: $c4;
@@ -42,7 +43,7 @@ footer {
 }
 
 .footerTop {
-    @include flexCol;
+    @extend %flexCol;
     align-items: center;
     text-align: center;
     margin: 3% auto 15% auto;
@@ -53,7 +54,7 @@ footer {
 
     form {
         label {
-            @include flexRow;
+            @extend %flexRow;
             
             input {
                 width: 20rem;
@@ -64,7 +65,7 @@ footer {
 
 .botonSus {
     background-color: $c3;
-    @include borderButton;
+    @extend %borderButton;
     @include sizes1 (5rem, 2em);
     color: $c2;
 }
@@ -78,12 +79,12 @@ footer {
 
 .imgFooter {
     margin-top: 2rem;
-    @include flexRow
+    @extend %flexRow;
 }
 
 /* estilos de Index */
 .bodyIndex {
-    @include grid1;
+    @extend %grid1;
 }
 
 .headerIndex {
@@ -92,8 +93,7 @@ footer {
 
 .mainIndex {
     grid-area: main;
-    display: flex;
-    flex-direction: column;
+    @include flex (flex, column);
 }
 
 .footerIndex {
@@ -121,7 +121,7 @@ h1 {
     margin: auto 0.5rem 2rem 0.5rem;
 
     img {
-        @include sizes2;
+        @extend %sizes2;
         border: 2px solid $c4;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
@@ -135,8 +135,8 @@ h1 {
 }
 
 .textBox {
-    @include flexCol;
-    @include sizes2;
+    @extend %flexCol;
+    @extend %sizes2;
     border: $border1;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -147,7 +147,7 @@ h1 {
     form {
         input {
             background-color: $c3;
-            @include borderButton;
+            @extend %borderButton;
             @include sizes1 (5rem, 2rem);
             color: $c2;
         }
@@ -157,7 +157,7 @@ h1 {
 .titleBox {
     font-size: 1.2rem;
     font-weight: bold;
-    @include flexRow;
+    @extend %flexRow;
     text-align: center;
     color: $c2;
 }
@@ -206,16 +206,16 @@ h1 {
 }
 
 .anchorTop {
-    @include flexRow;
+    @extend %flexRow;
 }
 
 .anchorBottom {
-    @include flexRow; 
+    @extend %flexRow; 
 }
 
 // estilo de calzas
 .bodyCalzas {
-    @include grid1;
+    @extend %grid1;
 }
 
 .headerCalzas {
@@ -232,7 +232,7 @@ h1 {
 
 // estilos de tops
 .bodyTops {
-    @include grid1;
+    @extend %grid1;
 }
 
 .headerTops {
@@ -249,7 +249,7 @@ h1 {
 
 // estilo de contacto
 .bodyContacto {
-    @include grid1;
+    @extend %grid1;
 }
 
 .headerContacto {
@@ -276,7 +276,7 @@ h1 {
     padding: 1rem;
     background-color: $c4;
     color: $c2;
-    @include flexCol;
+    @extend %flexCol;
     align-items: center;
     text-align: center;
     margin: 1rem auto 1rem auto;
@@ -323,7 +323,7 @@ span {
 }
 
 .product {
-    @include flexRow;
+    @extend %flexRow;
     margin: 5% auto 5% auto;
 }
 
@@ -345,7 +345,7 @@ span {
 
 // estilos de abrigos
 .bodyAbrigos {
-    @include grid2;
+    @extend %grid2;
 }
 
 .headerAbrigos {
@@ -354,8 +354,7 @@ span {
 
 .mainAbrigos {
     grid-area: main;
-    display: flex;
-    flex-direction: column;
+    @include flex (flex, column);
 }
 
 .footerAbrigos {
@@ -370,7 +369,7 @@ h3 {
 
 // estilos de newin
 .bodyNewin {
-    @include grid2;
+    @extend %grid2;
 }
 
 .headerNewin {
