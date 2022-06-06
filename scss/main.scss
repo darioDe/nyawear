@@ -24,8 +24,19 @@ header {
     width: 100vw;
     grid-area: header;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     background-color: $c4;
+}
+
+.menuHeader {
+    margin-top: 0.5rem;
+
+    :hover {
+        // border-top: 1px solid $c2;
+        // border-bottom: 1px solid $c2;
+        background-color: $c1;
+        width: 90vw;
+    }
 }
 
 // estilos de footer
@@ -101,6 +112,31 @@ footer {
 }
 
 /* estilos de main - index */
+
+.portada {
+    width: 100vw;
+    @extend %flexRow;
+}
+
+.portadaDesk {
+    display: none;
+}
+
+.portadaTab {
+    display: none;
+}
+
+.portadaMob {
+    @include sizes1(100%, 70%);
+    margin: 3rem 3% auto 3%;
+    filter: brightness(80%);
+}
+
+.titleMain-index {
+    text-align: center;
+     margin: 2rem auto 4rem auto;    
+}
+
 .titleMain {
     text-align: center;
     margin: 4rem auto 4rem auto;
@@ -108,12 +144,63 @@ footer {
 
 h1 {
     font-weight: bold;
+    border-top: 1px solid $c1;
+    border-bottom: 1px solid $c1;
 }
 
 .containerBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;    
+}
+
+.containerCarousel {
+    @include flex (flex, column);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.imgcarousel {
+    @include sizes1 (30vw, 30vh);
+}
+
+.boxCarousel {
+    text-align: center;
+    margin: auto 0.5rem 2rem 0.5rem;
+
+    img {
+        @include sizes1 (13rem, 13rem);
+        border: 2px solid $c4;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    form {
+        input {
+            color: $c4;
+        }
+    }
+}
+
+.textCarousel {
+    @extend %flexCol;
+    @include sizes1 (13rem, 11rem);
+    border: $border1;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color: $c4;
+    color: $c2;
+    text-align: center;
+
+    form {
+        input {
+            background-color: $c3;
+            @extend %borderButton;
+            @include sizes1 (5rem, 2rem);
+            color: $c2;
+        }
+    }
 }
 
 .boxDestacados {
@@ -174,6 +261,10 @@ h1 {
         box-shadow: $shadow;
         color: $c1;
     }
+
+    a:hover {
+        color: $c2;
+    }
 }
 
 .anchor {
@@ -200,9 +291,7 @@ h1 {
         img:hover {
             filter: brightness(50%);
         }
-    }
-
-    
+    }    
 }
 
 .anchorTop {

@@ -12,16 +12,16 @@
   grid-template-areas: "header" "main" "footer";
   grid-gap: 4rem; }
 
-footer, .footerTop, .textBox, .textBox-contacto {
+footer, .footerTop, .textCarousel, .textBox, .textBox-contacto {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-.footerTop form label, .imgFooter, .titleBox, .anchorTop, .anchorBottom, .product {
+.footerTop form label, .imgFooter, .portada, .titleBox, .anchorTop, .anchorBottom, .product {
   display: flex;
   justify-content: center; }
 
-.botonSus, .textBox form input {
+.botonSus, .textCarousel form input, .textBox form input {
   border: 1px solid black;
   border-radius: 10%; }
 
@@ -45,8 +45,14 @@ header {
   width: 100vw;
   grid-area: header;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   background-color: black; }
+
+.menuHeader {
+  margin-top: 0.5rem; }
+  .menuHeader :hover {
+    background-color: #8dc7e9;
+    width: 90vw; }
 
 footer {
   margin-top: 20%;
@@ -92,17 +98,76 @@ footer {
   grid-area: footer; }
 
 /* estilos de main - index */
+.portada {
+  width: 100vw; }
+
+.portadaDesk {
+  display: none; }
+
+.portadaTab {
+  display: none; }
+
+.portadaMob {
+  width: 100%;
+  height: 70%;
+  margin: 3rem 3% auto 3%;
+  filter: brightness(80%); }
+
+.titleMain-index {
+  text-align: center;
+  margin: 2rem auto 4rem auto; }
+
 .titleMain {
   text-align: center;
   margin: 4rem auto 4rem auto; }
 
 h1 {
-  font-weight: bold; }
+  font-weight: bold;
+  border-top: 1px solid #8dc7e9;
+  border-bottom: 1px solid #8dc7e9; }
 
 .containerBox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; }
+
+.containerCarousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; }
+
+.imgcarousel {
+  width: 30vw;
+  height: 30vh; }
+
+.boxCarousel {
+  text-align: center;
+  margin: auto 0.5rem 2rem 0.5rem; }
+  .boxCarousel img {
+    width: 13rem;
+    height: 13rem;
+    border: 2px solid black;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; }
+  .boxCarousel form input {
+    color: black; }
+
+.textCarousel {
+  width: 13rem;
+  height: 11rem;
+  border: 1px solid black;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: black;
+  color: white;
+  text-align: center; }
+  .textCarousel form input {
+    background-color: #0084ff;
+    width: 5rem;
+    height: 2rem;
+    color: white; }
 
 .boxDestacados {
   text-align: center;
@@ -143,6 +208,8 @@ h1 {
     background-color: black;
     box-shadow: 2px 2px 3px #0e0d0d;
     color: #8dc7e9; }
+  .newinh2 a:hover {
+    color: white; }
 
 .anchor a {
   text-decoration: none;
@@ -285,6 +352,14 @@ h3 {
   .footerTop {
     margin-bottom: 1.5rem; }
   /* mq de index */
+  .portadaMob {
+    display: none; }
+  .portadaTab {
+    display: block;
+    width: 100%;
+    height: 70%;
+    margin: 3rem 3% auto 3%;
+    filter: brightness(80%); }
   .boxDestacados img {
     width: 12rem;
     height: 16rem; }

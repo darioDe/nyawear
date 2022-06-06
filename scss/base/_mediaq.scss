@@ -18,6 +18,17 @@
     }
 
     /* mq de index */
+    .portadaMob {
+        display: none;
+    }
+
+    .portadaTab {
+        display: block;
+        @include sizes1(100%, 70%);
+        margin: 3rem 3% auto 3%;
+        filter: brightness(80%);
+    }
+
     .boxDestacados {
         img {
             @include sizes1 (12rem, 16rem);
