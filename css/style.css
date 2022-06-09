@@ -295,12 +295,12 @@ h1 {
   grid-area: footer; }
 
 .textMain {
-  color: #8dc7e9;
+  color: white;
   text-align: center;
   margin: auto 1rem 4rem 1rem; }
 
 .textBox-contacto {
-  border: 1px solid black;
+  border: 1px solid #8dc7e9;
   width: 9rem;
   height: 15rem;
   padding: 1rem;

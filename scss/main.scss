@@ -405,13 +405,13 @@ h1 {
 }
 
 .textMain {
-    color: $c1;
+    color: $c2;
     text-align: center;
     margin: auto 1rem 4rem 1rem;
 }
 
 .textBox-contacto {
-    border: $border1;
+    border: 1px solid $c1;
     @include sizes1 (9rem, 15rem);
     padding: 1rem;
     background-color: $c4;
