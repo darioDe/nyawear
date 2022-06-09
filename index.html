@@ -31,36 +31,35 @@
                 
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 
-                        <li class="nav-item menuHeader">
-                    
+                        <li class="nav-item">            
                             <a class="nav-link active" aria-current="page" href="pages/calzas.html">
-                                CALZAS
+                               CALZAS  
                             </a>
                         </li>
                 
-                        <li class="nav-item menuHeader">
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="pages/tops.html">
                                 TOPS
                             </a>
                         </li> 
                 
-                        <li class="nav-item menuHeader">
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="pages/remeras.html">REMERAS</a>
                         </li> 
                 
-                        <li class="nav-item menuHeader">
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="pages/abrigos.html">
                                 ABRIGOS
                             </a>
                         </li> 
                 
-                        <li class="nav-item menuHeader">
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="pages/contacto.html">
                                 CONTACTO
                             </a>
                         </li> 
                 
-                        <li class="nav-item menuHeader">
+                        <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="newin.html">
                                 NEW IN
                             </a>
@@ -81,28 +80,21 @@
     <main class="mainIndex">
         <!-- titulo, imagenes, texto descriptivo e input -->
         <div class="portada">
-            <img class="portadaDesk" src="img/portada.jpg" alt="Imagen de mujer haciendo deporte">
-            <img class="portadaMob" src="img/portada2.jpg" alt="Imagen de mujer haciendo deporte">
-            <img class="portadaTab" src="img/portada3.jpg" alt="Imagen de mujer haciendo deporte">
+            <img class="portadaDesk" src="img/bandesk.jpg" alt="Imagen de mujer haciendo deporte">
+            <img class="portadaMob" src="img/banmob.jpg" alt="Imagen de mujer haciendo deporte">
         </div>
 
         <div class="titleMain-index">
-            <h1> DESTACADOS</h1>        
+            <h1> DESTACADOS </h1>        
         </div>
 
         <div class="containerCarousel">
 
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="10000">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner ancho">
+                  <div class="carousel-item active">
                     <div class="boxCarousel">
-                        <img src="img/ropa1.jpg" alt="Imagen de top">
+                        <img class="d-block" src="img/ropa1.jpg" alt="Imagen de top">
                         <div class="textCarousel">
                             <p class="titleBox"> Top deportivo </p>
                             <p><span> $1.500,00 </span></p>
@@ -112,9 +104,9 @@
                         </div>
                     </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="2000">
+                  <div class="carousel-item">
                     <div class="boxCarousel">
-                        <img src="img/ropa2.jpg" alt="Imagen de calza">
+                        <img class="d-block" src="img/ropa2.jpg" alt="Imagen de calza">
                         <div class="textCarousel">
                             <p class="titleBox"> Calza running negra </p>
                             <p><span> $2.500,00 </span></p>
@@ -126,7 +118,7 @@
                   </div>
                   <div class="carousel-item">
                     <div class="boxCarousel">
-                        <img src="img/ropa3.jpg" alt="Imagen de remera">
+                        <img class="d-block" src="img/ropa3.jpg" alt="Imagen de remera">
                         <div class="textCarousel">
                             <p class="titleBox"> Remera lycra gris </p>
                             <p><span> $2.100,00 </span></p>
@@ -138,7 +130,7 @@
                   </div>
                   <div class="carousel-item">
                     <div class="boxCarousel">
-                        <img src="img/ropa4.jpg" alt="Imagen de Biker gris">
+                        <img class="d-block" src="img/ropa4.jpg" alt="Imagen de Biker gris">
                         <div class="textCarousel">
                             <p class="titleBox"> Biker gris </p>
                             <p><span> $2.100,00 </span></p>
@@ -149,16 +141,64 @@
                     </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
             </div>
 
+        </div>
+
+        <div class="containerDes">
+            
+            <div class="boxCarousel">
+                <img src="img/ropa1.jpg" alt="Imagen de top">
+                <div class="textCarousel">
+                    <p class="titleBox"> Top deportivo </p>
+                    <p><span> $1.500,00 </span></p>
+                    <form action="">
+                        <input type="submit" value="Comprar!">
+                    </form>
+                </div>
+            </div>
+              
+            
+            <div class="boxCarousel">
+                <img src="img/ropa2.jpg" alt="Imagen de calza">
+                <div class="textCarousel">
+                    <p class="titleBox"> Calza running negra </p>
+                    <p><span> $2.500,00 </span></p>
+                    <form action="">
+                        <input type="submit" value="Comprar!">
+                    </form>
+                </div>
+            </div>
+
+            <div class="boxCarousel">
+                <img src="img/ropa3.jpg" alt="Imagen de remera">
+                <div class="textCarousel">
+                    <p class="titleBox"> Remera lycra gris </p>
+                    <p><span> $2.100,00 </span></p>
+                    <form action="">
+                        <input type="submit" value="Comprar!">
+                    </form>
+                </div>
+            </div>
+
+            <div class="boxCarousel">
+                <img src="img/ropa4.jpg" alt="Imagen de Biker gris">
+                <div class="textCarousel">
+                    <p class="titleBox"> Biker gris </p>
+                    <p><span> $2.100,00 </span></p>
+                    <form action="">
+                        <input type="submit" value="Comprar!">
+                    </form>
+                </div>
+            </div>
         </div>
 
         <div class="newinh2">
@@ -171,7 +211,7 @@
                 <div class="anchor">
                     <a href="pages/tops.html">
                         <p> TOPS </p>
-                        <img src="img/ropa4.jpg" alt="Imagen de top">                            
+                        <img src="img/ropa5.jpg" alt="Imagen de top">                            
                     </a>
                 </div>
 
@@ -186,20 +226,25 @@
             <div class="anchorBottom">
                 <div class="anchor">
                     <a href="pages/calzas.html">
-                        <img src="img/ropa5.jpg" alt="Imagen de calza">
+                        <img src="img/ropa7.jpg" alt="Imagen de calza">
                         <p> CALZAS </p>
                     </a>
                 </div>
             
                 <div class="anchor">    
                     <a href="pages/abrigos.html">
-                        <img src="img/ropa7.jpg" alt="Imagen de abrigo">
+                        <img src="img/ropa8.jpg" alt="Imagen de abrigo">
                         <p> ABRIGOS </p>
                     </a>
                 </div>           
             </div>
 
         </section>
+
+        <div class="banner">
+            <img src="img/port.jpg" alt="Banner publicitario.">
+        </div>
+
     </main>
 
     <footer class="footerIndex">

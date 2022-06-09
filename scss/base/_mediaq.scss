@@ -22,22 +22,47 @@
         display: none;
     }
 
-    .portadaTab {
+    .portadaDesk {
         display: block;
-        @include sizes1(100%, 70%);
+        @include sizes1(100%, 80%);
         margin: 3rem 3% auto 3%;
-        filter: brightness(80%);
+        filter: brightness(90%);
+    }
+    
+    .titleMain-index {
+         margin-top: 4rem;
+    }
+    .containerCarousel {
+        display: none;
+    }
+
+    .containerDes {
+        @include flex (flex, row);
+        justify-content: space-around;
+        flex-wrap: wrap
     }
 
     .boxDestacados {
         img {
-            @include sizes1 (12rem, 16rem);
+            @include sizes1 (12rem, 12rem);
         }
     }
 
     .textBox {
-        @include sizes1 (12rem,12rem);
+        @include sizes1 (12rem,11rem);
         font-size: 1rem;
+
+        p{
+            span {
+                font-size: 1rem;
+            }
+        }
+        form {
+            input {
+                @include sizes1 (4rem, 1rem);
+                font-size: 1rem;
+            }
+        }
     }
 
     .titleBox {
@@ -61,6 +86,11 @@
 
    
     }
+
+    // mq calzas
+    .order {        
+        margin-right: 2rem
+    }
 }
 
 // media queries para deskpot
@@ -68,15 +98,13 @@
 
     // mq de index
     .boxDestacados {
-        width: auto;
-
         img {
-            @include sizes1 (16rem, 20rem)
+            @include sizes1 (18rem, 18rem)
         }
     }
 
     .textBox {
-        width: 16rem;
+        width: 18rem;
     }
 
     .anchor {

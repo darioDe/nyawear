@@ -1,4 +1,4 @@
-.bodyIndex, .bodyCalzas, .bodyTops, .bodyContacto {
+.bodyIndex, .bodyCalzas, .bodyTops, .bodyRemeras, .bodyContacto {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: repeat(2, 1fr);
@@ -17,17 +17,13 @@ footer, .footerTop, .textCarousel, .textBox, .textBox-contacto {
   flex-direction: column;
   justify-content: center; }
 
-.footerTop form label, .imgFooter, .portada, .titleBox, .anchorTop, .anchorBottom, .product {
+.footerTop form label, .imgFooter, .portada, .portadaMob, .titleBox, .anchorTop, .anchorBottom, .banner, .product {
   display: flex;
   justify-content: center; }
 
 .botonSus, .textCarousel form input, .textBox form input {
   border: 1px solid black;
   border-radius: 10%; }
-
-.boxDestacados img, .textBox {
-  width: 9rem;
-  height: 12rem; }
 
 * {
   margin: 0;
@@ -36,7 +32,7 @@ footer, .footerTop, .textCarousel, .textBox, .textBox-contacto {
   /* color: #8dc7e9; */ }
 
 body {
-  background-image: url(../img/fondo2.jpg);
+  background-image: url(../img/fondo1.jpg);
   background-attachment: fixed;
   background-size: cover;
   color: #8dc7e9; }
@@ -47,12 +43,6 @@ header {
   position: fixed;
   z-index: 2;
   background-color: black; }
-
-.menuHeader {
-  margin-top: 0.5rem; }
-  .menuHeader :hover {
-    background-color: #8dc7e9;
-    width: 90vw; }
 
 footer {
   margin-top: 20%;
@@ -70,7 +60,7 @@ footer {
   .footerTop h2 {
     color: #8dc7e9; }
   .footerTop form label input {
-    width: 20rem; }
+    width: 19rem; }
 
 .botonSus {
   background-color: #0084ff;
@@ -80,7 +70,7 @@ footer {
 
 .footerBottom p {
   margin-left: 1rem;
-  width: 80vw; }
+  width: 70vw; }
 
 .imgFooter {
   margin-top: 2rem; }
@@ -104,18 +94,15 @@ footer {
 .portadaDesk {
   display: none; }
 
-.portadaTab {
-  display: none; }
-
 .portadaMob {
-  width: 100%;
-  height: 70%;
-  margin: 3rem 3% auto 3%;
+  width: 90%;
+  height: 65%;
+  margin-top: 3rem;
   filter: brightness(80%); }
 
 .titleMain-index {
   text-align: center;
-  margin: 2rem auto 4rem auto; }
+  margin: 0.5rem auto 4rem auto; }
 
 .titleMain {
   text-align: center;
@@ -129,7 +116,8 @@ h1 {
 .containerBox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  margin: auto 0.5rem auto 0.5rem; }
 
 .containerCarousel {
   display: flex;
@@ -138,17 +126,23 @@ h1 {
   align-items: center;
   z-index: 1; }
 
+.ancho {
+  width: 18rem; }
+
 .imgcarousel {
   width: 30vw;
   height: 30vh; }
 
 .boxCarousel {
   text-align: center;
-  margin: auto 0.5rem 2rem 0.5rem; }
+  margin: auto 0.5rem 2rem 2.5rem;
+  display: inline-block;
+  border: 1px solid #8dc7e9;
+  border-radius: 1rem; }
   .boxCarousel img {
     width: 13rem;
     height: 13rem;
-    border: 2px solid black;
+    border: 1px solid black;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem; }
   .boxCarousel form input {
@@ -156,8 +150,7 @@ h1 {
 
 .textCarousel {
   width: 13rem;
-  height: 11rem;
-  border: 1px solid black;
+  height: 9rem;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   background-color: black;
@@ -169,42 +162,54 @@ h1 {
     height: 2rem;
     color: white; }
 
+.containerDes {
+  display: none; }
+
 .boxDestacados {
   text-align: center;
-  margin: auto 0.5rem 2rem 0.5rem; }
+  margin: auto 0.5rem 2rem 0.5rem;
+  border: 1px solid #8dc7e9;
+  border-radius: 1rem; }
   .boxDestacados img {
+    width: 8rem;
+    height: 8rem;
     border: 2px solid black;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem; }
-  .boxDestacados form input {
-    color: black; }
 
 .textBox {
+  width: 8rem;
+  height: 8rem;
   border: 1px solid black;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   background-color: black;
   color: white;
   text-align: center; }
+  .textBox p span {
+    font-size: 0.8rem; }
+  .textBox form label {
+    font-size: 0.8rem; }
   .textBox form input {
     background-color: #0084ff;
-    width: 5rem;
-    height: 2rem;
-    color: white; }
+    width: 3.5rem;
+    height: 1.5rem;
+    color: white;
+    font-size: 0.7rem; }
 
 .titleBox {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: bold;
   text-align: center;
   color: white; }
 
 .newinh2 {
   text-align: center;
-  margin: 6rem auto 2rem auto;
+  margin: 6rem auto 4rem auto;
   font-weight: bold; }
   .newinh2 a {
     text-decoration: none;
-    border: 4px solid rgba(0, 0, 0, 0.966);
+    border: 1px solid #8dc7e9;
     background-color: black;
     box-shadow: 2px 2px 3px #0e0d0d;
     color: #8dc7e9; }
@@ -222,7 +227,8 @@ h1 {
     box-shadow: 2px 2px 3px #0e0d0d;
     text-align: center;
     margin: auto 0.1rem auto 0.1rem;
-    background-color: black; }
+    background-color: black;
+    border: 1px solid #8dc7e9; }
   .anchor a img {
     width: 8rem;
     height: 8rem;
@@ -230,22 +236,53 @@ h1 {
   .anchor a img:hover {
     filter: brightness(50%); }
 
+.banner img {
+  width: 85%;
+  height: 55%;
+  margin-top: 6rem;
+  filter: brightness(80%); }
+
+.contentMain {
+  display: flex;
+  flex-direction: column; }
+
 .headerCalzas {
   grid-area: header; }
 
 .mainCalzas {
-  grid-area: main; }
+  grid-area: main;
+  display: flex;
+  flex-direction: column; }
 
 .footerCalzas {
   grid-area: footer; }
+
+.order {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+  margin-right: 0.2rem; }
 
 .headerTops {
   grid-area: header; }
 
 .mainTops {
-  grid-area: main; }
+  grid-area: main;
+  display: flex;
+  flex-direction: column; }
 
 .footerTops {
+  grid-area: footer; }
+
+.headerRemeras {
+  grid-area: header; }
+
+.mainRemeras {
+  grid-area: main;
+  display: flex;
+  flex-direction: column; }
+
+.footerRemeras {
   grid-area: footer; }
 
 .headerContacto {
@@ -354,19 +391,34 @@ h3 {
   /* mq de index */
   .portadaMob {
     display: none; }
-  .portadaTab {
+  .portadaDesk {
     display: block;
     width: 100%;
-    height: 70%;
+    height: 80%;
     margin: 3rem 3% auto 3%;
-    filter: brightness(80%); }
+    filter: brightness(90%); }
+  .titleMain-index {
+    margin-top: 4rem; }
+  .containerCarousel {
+    display: none; }
+  .containerDes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; }
   .boxDestacados img {
     width: 12rem;
-    height: 16rem; }
+    height: 12rem; }
   .textBox {
     width: 12rem;
-    height: 12rem;
+    height: 11rem;
     font-size: 1rem; }
+    .textBox p span {
+      font-size: 1rem; }
+    .textBox form input {
+      width: 4rem;
+      height: 1rem;
+      font-size: 1rem; }
   .titleBox {
     font-size: 1.2rem; }
   .anchor a img {
@@ -374,16 +426,16 @@ h3 {
     height: 15rem; }
   .textBox form input {
     width: 8rem;
-    height: 3rem; } }
+    height: 3rem; }
+  .order {
+    margin-right: 2rem; } }
 
 @media screen and (min-width: 992px) {
-  .boxDestacados {
-    width: auto; }
-    .boxDestacados img {
-      width: 16rem;
-      height: 20rem; }
+  .boxDestacados img {
+    width: 18rem;
+    height: 18rem; }
   .textBox {
-    width: 16rem; }
+    width: 18rem; }
   .anchor a img {
     width: 20rem;
     height: 20rem; }

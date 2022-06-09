@@ -13,7 +13,7 @@
 
 // estilos de body
 body {
-    background-image: url(../img/fondo2.jpg);
+    background-image: url(../img/fondo1.jpg);
     background-attachment: fixed;
     background-size: cover;
     color: $c1;   
@@ -26,17 +26,6 @@ header {
     position: fixed;
     z-index: 2;
     background-color: $c4;
-}
-
-.menuHeader {
-    margin-top: 0.5rem;
-
-    :hover {
-        // border-top: 1px solid $c2;
-        // border-bottom: 1px solid $c2;
-        background-color: $c1;
-        width: 90vw;
-    }
 }
 
 // estilos de footer
@@ -68,7 +57,7 @@ footer {
             @extend %flexRow;
             
             input {
-                width: 20rem;
+                width: 19rem;
             }
         }
     }
@@ -84,7 +73,7 @@ footer {
 .footerBottom {
     p {
         margin-left: 1rem;
-        width: $fullw - 20vw;
+        width: $fullw - 30vw;
     }
 }
 
@@ -122,19 +111,16 @@ footer {
     display: none;
 }
 
-.portadaTab {
-    display: none;
-}
-
 .portadaMob {
-    @include sizes1(100%, 70%);
-    margin: 3rem 3% auto 3%;
+    @extend %flexRow;
+    @include sizes1(90%, 65%);
+    margin-top: 3rem;
     filter: brightness(80%);
 }
 
 .titleMain-index {
     text-align: center;
-     margin: 2rem auto 4rem auto;    
+    margin: 0.5rem auto 4rem auto;    
 }
 
 .titleMain {
@@ -151,7 +137,8 @@ h1 {
 .containerBox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;    
+    justify-content: space-evenly;
+    margin: auto 0.5rem auto 0.5rem;
 }
 
 .containerCarousel {
@@ -161,17 +148,26 @@ h1 {
     z-index: 1;
 }
 
+.ancho {
+    width: 18rem;
+}
+
+
+
 .imgcarousel {
     @include sizes1 (30vw, 30vh);
 }
 
 .boxCarousel {
     text-align: center;
-    margin: auto 0.5rem 2rem 0.5rem;
+    margin: auto 0.5rem 2rem 2.5rem;
+    display: inline-block;
+    border: 1px solid $c1;
+    border-radius: 1rem;
 
     img {
         @include sizes1 (13rem, 13rem);
-        border: 2px solid $c4;
+        border: 1px solid $c4;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
     }
@@ -183,10 +179,11 @@ h1 {
     }
 }
 
+
 .textCarousel {
     @extend %flexCol;
-    @include sizes1 (13rem, 11rem);
-    border: $border1;
+    @include sizes1 (13rem, 9rem);
+    // border: $border1;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     background-color: $c4;
@@ -201,29 +198,30 @@ h1 {
             color: $c2;
         }
     }
+}
+
+.containerDes {
+    display: none;
 }
 
 .boxDestacados {
     text-align: center;
     margin: auto 0.5rem 2rem 0.5rem;
+    border: 1px solid $c1;
+    border-radius: 1rem;
 
     img {
-        @extend %sizes2;
+        @include sizes1 (8rem, 8rem);
         border: 2px solid $c4;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
     }
 
-    form {
-        input {
-            color: $c4;
-        }
-    }
 }
 
 .textBox {
     @extend %flexCol;
-    @extend %sizes2;
+    @include sizes1 (8rem, 8rem);
     border: $border1;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -231,18 +229,29 @@ h1 {
     color: $c2;
     text-align: center;
 
+    p{
+        span{
+            font-size: 0.8rem;
+        }
+    }
+
     form {
+        label {
+            font-size: 0.8rem;
+        }
+
         input {
             background-color: $c3;
             @extend %borderButton;
-            @include sizes1 (5rem, 2rem);
+            @include sizes1 (3.5rem, 1.5rem);
             color: $c2;
+            font-size: 0.7rem;
         }
     }
 }
 
 .titleBox {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: bold;
     @extend %flexRow;
     text-align: center;
@@ -251,12 +260,12 @@ h1 {
 
 .newinh2 {
     text-align: center;
-    margin: 6rem auto 2rem auto;
+    margin: 6rem auto 4rem auto;
     font-weight: bold;
 
     a {
         text-decoration: none;
-        border: 4px solid rgba(0, 0, 0, 0.966);
+        border: 1px solid $c1;
         background-color: $c4;
         box-shadow: $shadow;
         color: $c1;
@@ -281,6 +290,7 @@ h1 {
             text-align: center;
             margin: auto 0.1rem auto 0.1rem;
             background-color: $c4;
+            border: 1px solid $c1
         }
 
         img {
@@ -302,6 +312,20 @@ h1 {
     @extend %flexRow; 
 }
 
+.banner {
+    @extend %flexRow;
+
+    img {
+        @include sizes1(85%, 55%);
+        margin-top: 6rem;
+        filter: brightness(80%);
+    }
+}
+
+.contentMain {
+    @include flex (flex, column)
+}
+
 // estilo de calzas
 .bodyCalzas {
     @extend %grid1;
@@ -313,10 +337,18 @@ h1 {
 
 .mainCalzas {
     grid-area: main;
+    @include flex (flex, column);
 }
 
 .footerCalzas {
     grid-area: footer;
+}
+
+.order {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+    margin-right: 0.2rem;
 }
 
 // estilos de tops
@@ -330,9 +362,28 @@ h1 {
 
 .mainTops {
     grid-area: main;
+    @include flex (flex, column);
 }
 
 .footerTops {
+    grid-area: footer;
+}
+
+// estilos de remeras
+.bodyRemeras {
+    @extend %grid1;
+}
+
+.headerRemeras {
+    grid-area: header;
+}
+
+.mainRemeras {
+    grid-area: main;
+    @include flex (flex, column);
+}
+
+.footerRemeras{
     grid-area: footer;
 }
 
