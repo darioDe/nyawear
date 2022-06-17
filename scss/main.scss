@@ -8,7 +8,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* color: #8dc7e9; */
 }
 
 // estilos de body
@@ -118,7 +117,7 @@ footer {
     filter: brightness(80%);
 }
 
-.titleMain-index {
+.titleMainIndex {
     text-align: center;
     margin: 0.5rem auto 4rem auto;    
 }
@@ -154,9 +153,9 @@ h1 {
 
 
 
-.imgcarousel {
-    @include sizes1 (30vw, 30vh);
-}
+// .imgcarousel {
+//     @include sizes1 (30vw, 30vh);
+// }
 
 .boxCarousel {
     text-align: center;
@@ -327,7 +326,7 @@ h1 {
 }
 
 // estilo de calzas
-.bodyCalzas {
+.bodyContainer {
     @extend %grid1;
 }
 
@@ -410,7 +409,7 @@ h1 {
     margin: auto 1rem 4rem 1rem;
 }
 
-.textBox-contacto {
+.textBoxContacto {
     border: 1px solid $c1;
     @include sizes1 (9rem, 15rem);
     padding: 1rem;
@@ -446,25 +445,9 @@ h1 {
     background-size: cover;
 }
 
-.titleRemeras {
-    margin: 8rem auto 4rem auto;
-    color: $c1;
-}
-
-.card {
-    background-color: $c4;
-    color: $c2;
-    text-align: center;
-}
-
 span {
     color: $c1;
     font-weight: bold;
-}
-
-.product {
-    @extend %flexRow;
-    margin: 5% auto 5% auto;
 }
 
 .footerRemeras {
@@ -473,9 +456,6 @@ span {
     padding: 5%;
 }
 
-.subFooter-remeras {
-    color: $c1;
-}
 
 .footerImg {
     img {

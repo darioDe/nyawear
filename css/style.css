@@ -1,4 +1,4 @@
-.bodyIndex, .bodyCalzas, .bodyTops, .bodyRemeras, .bodyContacto {
+.bodyIndex, .bodyContainer, .bodyTops, .bodyRemeras, .bodyContacto {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: repeat(2, 1fr);
@@ -12,12 +12,12 @@
   grid-template-areas: "header" "main" "footer";
   grid-gap: 4rem; }
 
-footer, .footerTop, .textCarousel, .textBox, .textBox-contacto {
+footer, .footerTop, .textCarousel, .textBox, .textBoxContacto {
   display: flex;
   flex-direction: column;
   justify-content: center; }
 
-.footerTop form label, .imgFooter, .portada, .portadaMob, .titleBox, .anchorTop, .anchorBottom, .banner, .product {
+.footerTop form label, .imgFooter, .portada, .portadaMob, .titleBox, .anchorTop, .anchorBottom, .banner {
   display: flex;
   justify-content: center; }
 
@@ -28,8 +28,7 @@ footer, .footerTop, .textCarousel, .textBox, .textBox-contacto {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  /* color: #8dc7e9; */ }
+  box-sizing: border-box; }
 
 body {
   background-image: url(../img/fondo1.jpg);
@@ -100,7 +99,7 @@ footer {
   margin-top: 3rem;
   filter: brightness(80%); }
 
-.titleMain-index {
+.titleMainIndex {
   text-align: center;
   margin: 0.5rem auto 4rem auto; }
 
@@ -128,10 +127,6 @@ h1 {
 
 .ancho {
   width: 18rem; }
-
-.imgcarousel {
-  width: 30vw;
-  height: 30vh; }
 
 .boxCarousel {
   text-align: center;
@@ -299,7 +294,7 @@ h1 {
   text-align: center;
   margin: auto 1rem 4rem 1rem; }
 
-.textBox-contacto {
+.textBoxContacto {
   border: 1px solid #8dc7e9;
   width: 9rem;
   height: 15rem;
@@ -310,11 +305,11 @@ h1 {
   text-align: center;
   margin: 1rem auto 1rem auto;
   box-shadow: 2px 2px 3px #0e0d0d; }
-  .textBox-contacto img {
+  .textBoxContacto img {
     margin-top: 0.5rem;
     width: 2rem;
     height: 2rem; }
-  .textBox-contacto p a {
+  .textBoxContacto p a {
     text-decoration: none;
     color: #8dc7e9; }
 
@@ -326,29 +321,14 @@ h1 {
   background-attachment: fixed;
   background-size: cover; }
 
-.titleRemeras {
-  margin: 8rem auto 4rem auto;
-  color: #8dc7e9; }
-
-.card {
-  background-color: black;
-  color: white;
-  text-align: center; }
-
 span {
   color: #8dc7e9;
   font-weight: bold; }
-
-.product {
-  margin: 5% auto 5% auto; }
 
 .footerRemeras {
   background-color: black;
   color: white;
   padding: 5%; }
-
-.subFooter-remeras {
-  color: #8dc7e9; }
 
 .footerImg img {
   width: 50px;
@@ -397,7 +377,7 @@ h3 {
     height: 80%;
     margin: 3rem 3% auto 3%;
     filter: brightness(90%); }
-  .titleMain-index {
+  .titleMainIndex {
     margin-top: 4rem; }
   .containerCarousel {
     display: none; }
@@ -439,7 +419,7 @@ h3 {
   .anchor a img {
     width: 20rem;
     height: 20rem; }
-  .textBox-contacto {
+  .textBoxContacto {
     width: 17rem;
     height: 14rem; }
   .block {
