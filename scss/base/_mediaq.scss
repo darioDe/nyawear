@@ -1,9 +1,9 @@
-// media queries
+// MEDIA QUERIES
 
-// media queries para tablet
+// MEDIA QUERIES PARA TABLET
 @media screen and (min-width:600px) {
     
-    /* estilos de main */
+    /* ESTILOS DE MAIN */
     h1 {
         font-size: 2.5rem;
     }
@@ -12,12 +12,12 @@
         font-size: 2rem;
     }
 
-    /* mq footer */
+    /* MQ DE FOOTER */
     .footerTop {
         margin-bottom: 1.5rem;
     }
 
-    /* mq de index */
+    /* MQ DE INDEX */
     .portadaMob {
         display: none;
     }
@@ -87,16 +87,16 @@
    
     }
 
-    // mq calzas
+    // MQ DE CALZAS
     .order {        
         margin-right: 2rem
     }
 }
 
-// media queries para deskpot
+// MEDIA QUERIES PARA DESKPOT
 @media screen and (min-width:992px) {
 
-    // mq de index
+    // MQ DE INDEX
     .boxDestacados {
         img {
             @include sizes1 (18rem, 18rem)
@@ -115,7 +115,7 @@
         }
     }
 
-    // mq de contacto
+    // MQ DE CONTACTO
 
     .textBoxContacto {
         @include  sizes1 (17rem, 14rem)

@@ -2,7 +2,7 @@
 @import "base/mixins";
 @import "base/extends";
 
-//  reset
+//  RESET
 
 * {
     margin: 0;
@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 
-// estilos de body
+// ESTILOS DE BODY
 body {
     background-image: url(../img/fondo1.jpg);
     background-attachment: fixed;
@@ -18,7 +18,7 @@ body {
     color: $c1;   
 }
 
-// estilos de header
+// ESTILOS DE HEADER
 header {
     width: 100vw;
     grid-area: header;
@@ -27,7 +27,26 @@ header {
     background-color: $c4;
 }
 
-// estilos de footer
+.nav-link:hover {
+    color: $c1 !important;
+}
+
+.animationRed {
+    animation-duration: 1.5s !important;
+    animation-name: animRed !important;
+    animation-iteration-count: infinite !important;
+}
+
+@keyframes animRed {
+    0% {
+        color: $c2;
+    }
+    60% {
+        color: red;
+    }
+}
+
+// ESTILOS DE FOOTER
 footer {
     @extend %flexCol;
     margin-top: 20%;
@@ -81,7 +100,7 @@ footer {
     @extend %flexRow;
 }
 
-/* estilos de Index */
+/* ESTILOS DE INDEX */
 .bodyIndex {
     @extend %grid1;
 }
@@ -99,7 +118,7 @@ footer {
     grid-area: footer;
 }
 
-/* estilos de main - index */
+/* ESTILOS DE MAIN - INDEX */
 
 .portada {
     width: 100vw;
@@ -112,7 +131,7 @@ footer {
 
 .portadaMob {
     @extend %flexRow;
-    @include sizes1(90%, 65%);
+    @include sizes1(90%, 75%);
     margin-top: 3rem;
     filter: brightness(80%);
 }
@@ -151,12 +170,6 @@ h1 {
     width: 18rem;
 }
 
-
-
-// .imgcarousel {
-//     @include sizes1 (30vw, 30vh);
-// }
-
 .boxCarousel {
     text-align: center;
     margin: auto 0.5rem 2rem 2.5rem;
@@ -182,7 +195,6 @@ h1 {
 .textCarousel {
     @extend %flexCol;
     @include sizes1 (13rem, 9rem);
-    // border: $border1;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     background-color: $c4;
@@ -325,7 +337,7 @@ h1 {
     @include flex (flex, column)
 }
 
-// estilo de calzas
+// ESTILOS DE CALZA
 .bodyContainer {
     @extend %grid1;
 }
@@ -350,7 +362,7 @@ h1 {
     margin-right: 0.2rem;
 }
 
-// estilos de tops
+// ESTILOS DE TOPS
 .bodyTops {
     @extend %grid1;
 }
@@ -368,7 +380,7 @@ h1 {
     grid-area: footer;
 }
 
-// estilos de remeras
+// ESTILOS DE REMERAS
 .bodyRemeras {
     @extend %grid1;
 }
@@ -386,7 +398,7 @@ h1 {
     grid-area: footer;
 }
 
-// estilo de contacto
+// ESTILO DE CONTACTO
 .bodyContacto {
     @extend %grid1;
 }
@@ -438,32 +450,7 @@ h1 {
     display: block;
 }
 
-// estilos de remeras
-.bodyRemera {
-    background-image: url(../img/fondo2.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-span {
-    color: $c1;
-    font-weight: bold;
-}
-
-.footerRemeras {
-    background-color: $c4;
-    color: $c2;
-    padding: 5%;
-}
-
-
-.footerImg {
-    img {
-        @include sizes1 (50px, 50px)
-    }
-}
-
-// estilos de abrigos
+// ESTILOS DE ABRIGOS
 .bodyAbrigos {
     @extend %grid2;
 }
@@ -487,7 +474,7 @@ h3 {
     margin: 2rem auto 2rem 2rem;
 }
 
-// estilos de newin
+// ESTILOS DE NEW IN
 .bodyNewin {
     @extend %grid2;
 }

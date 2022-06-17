@@ -43,6 +43,20 @@ header {
   z-index: 2;
   background-color: black; }
 
+.nav-link:hover {
+  color: #8dc7e9 !important; }
+
+.animationRed {
+  animation-duration: 1.5s !important;
+  animation-name: animRed !important;
+  animation-iteration-count: infinite !important; }
+
+@keyframes animRed {
+  0% {
+    color: white; }
+  60% {
+    color: red; } }
+
 footer {
   margin-top: 20%;
   grid-area: footer;
@@ -74,7 +88,7 @@ footer {
 .imgFooter {
   margin-top: 2rem; }
 
-/* estilos de Index */
+/* ESTILOS DE INDEX */
 .headerIndex {
   grid-area: header; }
 
@@ -86,7 +100,7 @@ footer {
 .footerIndex {
   grid-area: footer; }
 
-/* estilos de main - index */
+/* ESTILOS DE MAIN - INDEX */
 .portada {
   width: 100vw; }
 
@@ -95,7 +109,7 @@ footer {
 
 .portadaMob {
   width: 90%;
-  height: 65%;
+  height: 75%;
   margin-top: 3rem;
   filter: brightness(80%); }
 
@@ -316,24 +330,6 @@ h1 {
 .block {
   display: block; }
 
-.bodyRemera {
-  background-image: url(../img/fondo2.jpg);
-  background-attachment: fixed;
-  background-size: cover; }
-
-span {
-  color: #8dc7e9;
-  font-weight: bold; }
-
-.footerRemeras {
-  background-color: black;
-  color: white;
-  padding: 5%; }
-
-.footerImg img {
-  width: 50px;
-  height: 50px; }
-
 .headerAbrigos {
   grid-area: header; }
 
@@ -360,15 +356,15 @@ h3 {
   grid-area: footer; }
 
 @media screen and (min-width: 600px) {
-  /* estilos de main */
+  /* ESTILOS DE MAIN */
   h1 {
     font-size: 2.5rem; }
   h2 {
     font-size: 2rem; }
-  /* mq footer */
+  /* MQ DE FOOTER */
   .footerTop {
     margin-bottom: 1.5rem; }
-  /* mq de index */
+  /* MQ DE INDEX */
   .portadaMob {
     display: none; }
   .portadaDesk {
