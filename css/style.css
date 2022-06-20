@@ -17,7 +17,7 @@ footer, .footerTop, .textCarousel, .textBox, .textBoxContacto {
   flex-direction: column;
   justify-content: center; }
 
-.footerTop form label, .imgFooter, .portada, .portadaMob, .titleBox, .anchorTop, .anchorBottom, .banner {
+.footerTop form label, .pfooter, .portada, .portadaMob, .titleBox, .anchorTop, .anchorBottom, .banner {
   display: flex;
   justify-content: center; }
 
@@ -34,7 +34,8 @@ body {
   background-image: url(../img/fondo1.jpg);
   background-attachment: fixed;
   background-size: cover;
-  color: #8dc7e9; }
+  color: #8dc7e9;
+  overflow-x: hidden; }
 
 header {
   width: 100vw;
@@ -85,8 +86,13 @@ footer {
   margin-left: 1rem;
   width: 70vw; }
 
+.pfooter {
+  text-align: center; }
+
 .imgFooter {
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly; }
 
 /* ESTILOS DE INDEX */
 .headerIndex {
@@ -98,7 +104,8 @@ footer {
   flex-direction: column; }
 
 .footerIndex {
-  grid-area: footer; }
+  grid-area: footer;
+  width: 100vw; }
 
 /* ESTILOS DE MAIN - INDEX */
 .portada {

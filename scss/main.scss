@@ -15,7 +15,8 @@ body {
     background-image: url(../img/fondo1.jpg);
     background-attachment: fixed;
     background-size: cover;
-    color: $c1;   
+    color: $c1;
+    overflow-x: hidden;
 }
 
 // ESTILOS DE HEADER
@@ -95,9 +96,15 @@ footer {
     }
 }
 
+.pfooter {
+    text-align: center;
+    @extend %flexRow;
+}
+
 .imgFooter {
     margin-top: 2rem;
-    @extend %flexRow;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* ESTILOS DE INDEX */
@@ -116,6 +123,7 @@ footer {
 
 .footerIndex {
     grid-area: footer;
+    width: 100vw;
 }
 
 /* ESTILOS DE MAIN - INDEX */
