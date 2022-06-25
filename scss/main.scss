@@ -209,6 +209,15 @@ h1 {
     color: $c2;
     text-align: center;
 
+    p{
+        font-size: 1.1rem;
+        span{
+            font-size: 0.9rem;
+            color: $c1;
+            font-weight: bold;
+        }
+    }
+
     form {
         input {
             background-color: $c3;
@@ -251,6 +260,8 @@ h1 {
     p{
         span{
             font-size: 0.8rem;
+            color: $c1;
+            font-weight: bold;
         }
     }
 

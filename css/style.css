@@ -172,6 +172,12 @@ h1 {
   background-color: black;
   color: white;
   text-align: center; }
+  .textCarousel p {
+    font-size: 1.1rem; }
+    .textCarousel p span {
+      font-size: 0.9rem;
+      color: #8dc7e9;
+      font-weight: bold; }
   .textCarousel form input {
     background-color: #0084ff;
     width: 5rem;
@@ -203,7 +209,9 @@ h1 {
   color: white;
   text-align: center; }
   .textBox p span {
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+    color: #8dc7e9;
+    font-weight: bold; }
   .textBox form label {
     font-size: 0.8rem; }
   .textBox form input {
